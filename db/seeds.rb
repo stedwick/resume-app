@@ -6,7 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-philip = Person.create({
+philip = Person.find_by name: "Philip Brocoum"
+philip ||= Person.new
+philip.update({
   name: "Philip Brocoum",
   about: "Remote full-time Ruby on Rails developer.",
   location: "Portland, OR",
