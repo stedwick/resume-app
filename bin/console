@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-docker run --rm --network resume --mount type=bind,source="$PWD",target=/myapp --interactive --tty resume bin/rails console
