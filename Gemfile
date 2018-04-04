@@ -51,6 +51,7 @@ group :development do
 
   # Better console
   gem "pry-rails"
+  gem "bond" # better IRB completion
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
