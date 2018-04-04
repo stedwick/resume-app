@@ -6,5 +6,6 @@ WORKDIR /resume
 COPY Gemfile /resume/Gemfile
 COPY Gemfile.lock /resume/Gemfile.lock
 RUN bundle install
+COPY .inputrc /root/.inputrc
 VOLUME /resume
 # CMD ["bin/rails", "server"]
