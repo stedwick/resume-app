@@ -61,6 +61,8 @@ development:
 test:
   <<: *default
   database: resume_test
+  # For development, allow connecting to either docker or local database
+  host: <%= ENV["HOME"] == "/root" ? "db" : "localhost" %>
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
