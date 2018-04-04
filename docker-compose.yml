@@ -4,18 +4,21 @@ services:
     build: .
     volumes:
       - .:/resume
-      - resume-gems:/usr/local/bundle
+      - gems:/usr/local/bundle
     ports:
-      - "3000-3099:3000"
+      - "3000:3000"
+    # Allow debugging in development
+    stdin_open: true
+    tty: true
     command: bin/rails server
   db:
     image: postgres:10.3
     volumes:
-      - resume-db:/var/lib/postgresql/data
+      - db:/var/lib/postgresql/data
   dba:
     image: adminer:4.6
     ports:
       - "8080:8080"
 volumes:
-  resume-gems:
-  resume-db:
+  gems:
+  db:
