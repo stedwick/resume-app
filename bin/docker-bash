@@ -2,7 +2,7 @@
 
 # Handle both bash and running a command directly
 if [ -n "$*" ]; then
-  docker run --rm --mount type=bind,source="$PWD",target=/myapp --mount source=resume-gems,target=/usr/local/bundle --network resume --interactive --tty resume bash -l -c "$*"
+  docker run --rm --mount type=bind,source="$PWD",target=/resume --mount source=resume-gems,target=/usr/local/bundle --network resume --interactive --tty resume bash -l -c "$*"
 else
-  docker run --rm --mount type=bind,source="$PWD",target=/myapp --mount source=resume-gems,target=/usr/local/bundle --network resume --interactive --tty resume bash -l
+  docker run --rm --mount type=bind,source="$PWD",target=/resume --mount source=resume-gems,target=/usr/local/bundle --network resume --interactive --tty resume bash -l
 fi
