@@ -6,9 +6,5 @@ WORKDIR /myapp
 COPY Gemfile /myapp/Gemfile
 COPY Gemfile.lock /myapp/Gemfile.lock
 RUN bundle install
-COPY Gemfile-docker /myapp/Gemfile-docker
-COPY Gemfile-docker.lock /myapp/Gemfile-docker.lock
-RUN bundle install --gemfile Gemfile-docker
-VOLUME /usr/local/bundle
 VOLUME /myapp
 # CMD ["bin/rails", "server"]
