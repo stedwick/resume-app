@@ -3,7 +3,7 @@ services:
   app:
     build: .
     volumes:
-      - .:/resume
+      # - .:/resume
       - gems:/usr/local/bundle
     ports:
       - "3000:3000"
