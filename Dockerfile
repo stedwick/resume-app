@@ -8,4 +8,5 @@ COPY Gemfile /resume/Gemfile
 COPY Gemfile.lock /resume/Gemfile.lock
 RUN bundle install
 COPY . /resume
-# CMD ["bin/rails", "server"]
+EXPOSE 3000
+CMD ["bin/rails", "server"]
