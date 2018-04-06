@@ -7,5 +7,5 @@ WORKDIR /resume
 COPY Gemfile /resume/Gemfile
 COPY Gemfile.lock /resume/Gemfile.lock
 RUN bundle install
-VOLUME /resume
+COPY . /resume
 # CMD ["bin/rails", "server"]
