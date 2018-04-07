@@ -5,6 +5,7 @@ services:
       context: .
       dockerfile: ./config/nginx/Dockerfile
     volumes:
+      - ./public:/rails/public:ro
       - ssl:/etc/ssl/certs
     ports:
       - "80:80"
