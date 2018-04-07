@@ -10,7 +10,7 @@ services:
   app:
     build: .
     volumes:
-      - .:/resume
+      - .:/rails
       - gems:/usr/local/bundle
     # Allow debugging in development
     stdin_open: true
