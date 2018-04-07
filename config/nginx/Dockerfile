@@ -1,6 +1,6 @@
 FROM nginx:1.13
 COPY config/nginx/default.conf /etc/nginx/conf.d/default.conf
-COPY config/nginx/localhost.crt /var/localhost.crt
-COPY config/nginx/localhost.key /var/localhost.key
+COPY config/nginx/default.crt /etc/ssl/certs/default.crt
+COPY config/nginx/default.key /etc/ssl/certs/default.key
 RUN mkdir /rails
 COPY . /rails
