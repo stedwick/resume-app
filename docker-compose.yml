@@ -1,7 +1,9 @@
 version: '3'
 services:
   web:
-    build: ./config/nginx/
+    build:
+      context: .
+      dockerfile: ./config/nginx/Dockerfile
     ports:
       - "80:80"
       - "443:443"
@@ -9,14 +11,14 @@ services:
     build: .
     volumes:
       - .:/resume
-      - gems:/usr/local/bundle/
+      - gems:/usr/local/bundle
     # Allow debugging in development
     stdin_open: true
     tty: true
   db:
     image: postgres:10.3
     volumes:
-      - db:/var/lib/postgresql/data/
+      - db:/var/lib/postgresql/data
   dba:
     image: adminer:4.6
     ports:
