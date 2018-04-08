@@ -6,7 +6,7 @@ RUN mkdir /rails
 WORKDIR /rails
 COPY Gemfile /rails/Gemfile
 COPY Gemfile.lock /rails/Gemfile.lock
-RUN bundle install
+RUN bundle install --without development test
 COPY . /rails
 EXPOSE 3000
 CMD ["bin/rails", "server"]
