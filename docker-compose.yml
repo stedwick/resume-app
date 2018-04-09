@@ -16,8 +16,8 @@ services:
       - .:/rails
       - gems:/usr/local/bundle
     # Allow debugging in development
-    stdin_open: true
-    tty: true
+    # stdin_open: true
+    # tty: true
   db:
     image: postgres:10.3
     volumes:
