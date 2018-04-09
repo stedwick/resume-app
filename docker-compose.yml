@@ -6,27 +6,20 @@ services:
       dockerfile: ./config/nginx/Dockerfile
     volumes:
       - ./public:/rails/public:ro
-      - ssl:/etc/ssl/certs
-    ports:
-      - "80:80"
-      - "443:443"
   app:
     build: .
     volumes:
       - .:/rails
       - gems:/usr/local/bundle
-    # Allow debugging in development
-    # stdin_open: true
-    # tty: true
   db:
     image: postgres:10.3
     volumes:
       - db:/var/lib/postgresql/data
-  dba:
-    image: adminer:4.6
-    ports:
-      - "8080:8080"
 volumes:
   db:
   gems:
   ssl:
+networks:
+  default:
+    external:
+      name: resume_default
