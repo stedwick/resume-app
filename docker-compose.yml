@@ -11,6 +11,8 @@ services:
     volumes:
       - .:/rails
       - gems:/usr/local/bundle
+    environment:
+      - COMPOSE_PROJECT_NAME
   db:
     image: postgres:10.3
     volumes:
@@ -18,8 +20,7 @@ services:
 volumes:
   db:
   gems:
-  ssl:
 networks:
   default:
     external:
-      name: resume_default
+      name: ${COMPOSE_PROJECT_NAME:-resume}_dev

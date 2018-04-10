@@ -9,4 +9,4 @@ COPY Gemfile.lock /rails/Gemfile.lock
 RUN bundle install
 COPY . /rails
 EXPOSE 3000
-CMD ["bin/rails", "server"]
+CMD bin/rails server --pid=tmp/pids/${COMPOSE_PROJECT_NAME:-server}.pid
