@@ -11,8 +11,6 @@ services:
     volumes:
       - .:/rails
       - gems:/usr/local/bundle
-    environment:
-      - COMPOSE_PROJECT_NAME
   db:
     image: postgres:10.3
     volumes:
