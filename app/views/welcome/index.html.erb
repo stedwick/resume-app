@@ -1,6 +1,8 @@
 <div class="container text-center text-light bg-dark" id="cover" style="background-image: url(<%= image_path @person.background_img %>);">
-  <div class="row align-items-center h-100">
-    <div class="col">
+  <div class="row py-3" id="cover-row">
+    <div class="col align-self-start"></div>
+    <div class="w-100"></div>
+    <div class="col align-self-center">
       <%= image_2x @person.profile_pic, id: "profile-pic", class: "rounded-circle" %>
       <h1><%= @person.name %></h1>
       <p class="lead"><%= @person.about %></p>
@@ -11,7 +13,9 @@
         <%= link_to_social "facebook", @person.facebook %>
         <%= link_to_social "twitter", @person.twitter %>
       </p>
-      <br /><br />
+    </div>
+    <div class="w-100"></div>
+    <div class="col align-self-end mt-3">
       <p>
         <%= link_to "Hire Me", "#", class: "btn btn-lg btn-danger" %>
         <%= link_to "My Work", "#", class: "btn btn-lg btn-secondary" %>
