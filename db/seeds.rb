@@ -25,5 +25,7 @@ philip.update({
   personal_blurb: "I maintain a healthy work/life balance. If you would like to learn more about me as a person, beyond my Ruby professional life, check out the links below!",
   contact_blurb: "Are you looking for a full-time Senior Ruby on Rails Developer or Engineering Manager? I'm based in New York City, but I also have years of experience working remotely. Drop me a line.",
   phone: "1 (347) 701-0252",
-  email: "philip.brocoum@gmail.com"
+  email: "philip.brocoum@gmail.com",
+  profile_pic: "philip-sq.jpg",
+  background_img: "mt-hood.jpg"
 })

@@ -1,11 +1,19 @@
-<div class="container text-center text-light bg-dark" id="cover">
+<div class="container text-center text-light bg-dark" id="cover" style="background-image: url(<%= image_path @person.background_img %>);">
   <div class="row align-items-center h-100">
     <div class="col">
-      <%= image_2x "philip-sq.jpg", id: "profile-pic", class: "rounded-circle" %>
+      <%= image_2x @person.profile_pic, id: "profile-pic", class: "rounded-circle" %>
       <h1><%= @person.name %></h1>
-      <p class="lead">Remote full-time Ruby on Rails developer</p>
+      <p class="lead">Full-stack Ruby on Rails developer</p>
+      <p>Portland, OR</p>
       <p>
-        <a href="#" class="btn btn-lg btn-primary">Hire Me</a>
+        <%= link_to_social @person.github, "github" %>
+        <%= link_to_social @person.linkedin, "linkedin-in" %>
+        <%= link_to_social @person.facebook, "facebook" %>
+        <%= link_to_social @person.twitter, "twitter" %>
+      </p>
+      <br /><br />
+      <p>
+        <a href="#" class="btn btn-lg btn-danger">Hire Me</a>
         <a href="#" class="btn btn-lg btn-secondary">My Work</a>
       </p>
     </div>

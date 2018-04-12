@@ -4,7 +4,9 @@
 
 #cover {
   height: 100vh;
+  background-size: cover;
   img#profile-pic {
     max-width: 200px;
+    border: 0.25rem solid $light;
   }
 }
