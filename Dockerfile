@@ -9,4 +9,4 @@ COPY Gemfile.lock /rails/Gemfile.lock
 RUN bundle install
 COPY . /rails
 EXPOSE 3000
-CMD bin/rails server --pid=tmp/pids/$(bash -c 'echo $RANDOM').pid
+CMD bash -c "rm -f tmp/pids/server.pid && bin/rails server"
