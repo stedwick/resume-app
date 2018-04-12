@@ -4,4 +4,8 @@ module ApplicationHelper
     path_2x = image_path source_2x
     image_tag source, options.merge({"data-rjs": path_2x})
   end
+
+  def markdown md
+    MarkdownRenderer.render(md).html_safe
+  end
 end

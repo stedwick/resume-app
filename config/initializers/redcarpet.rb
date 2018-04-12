@@ -1,0 +1,1 @@
+::MarkdownRenderer = Redcarpet::Markdown.new(Redcarpet::Render::HTML)

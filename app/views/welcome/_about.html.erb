@@ -1,0 +1,29 @@
+<div class="container <%= cycle "bg-light", "bg-white" %>" id="skills">
+  <div class="row pt-3" id="skills-row">
+    <div class="col">
+      <h2 class="text-center">About Me</h2>
+      <%= markdown "I started developing for the web in 2008. I now have a decade of experience working with large apps, and I'm familiar with the newest and most popular technologies.\n\nThis site you're reading runs on [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). View the source on [GitHub](https://github.com/stedwick/resume)." %>
+    </div>
+  </div>
+
+
+  <h3 class="text-center">My Skillset</h3>
+  <div class="row mt-3">
+    <div class="col">
+      <div class="media">
+        <%= image_2x "ruby.png", class: "mr-3" %>
+        <div class="media-body">
+          <h5 class="mt-0">Ruby on Rails</h5>
+            I started with Rails 2 back in 2008. Today, I'm still going strong with Rails 5.
+        </div>
+      </div>
+      <div class="media">
+        <%= image_2x "ruby.png", class: "mr-3" %>
+        <div class="media-body">
+          <h5 class="mt-0">Ruby on Rails</h5>
+            I started with Rails 2 back in 2008. Today, I'm still going strong with Rails 5.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
