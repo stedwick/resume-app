@@ -1,10 +1,8 @@
 <div class="container text-center text-light bg-dark" id="cover">
   <div class="row align-items-center h-100">
     <div class="col">
-      <%= image_tag "philip-sq.jpg", {class: "rounded-circle w-75"} %>
-      <h1>
-        <%= @person.name %>
-      </h1>
+      <%= image_2x "philip-sq.jpg", id: "profile-pic", class: "rounded-circle" %>
+      <h1><%= @person.name %></h1>
       <p class="lead">Remote full-time Ruby on Rails developer</p>
       <p>
         <a href="#" class="btn btn-lg btn-primary">Hire Me</a>
@@ -13,6 +11,8 @@
     </div>
   </div>
 </div>
+
+
 
 <div class="text-center cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="masthead mb-auto">
