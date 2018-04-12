@@ -10,7 +10,7 @@ philip = Person.find_by name: "Philip Brocoum"
 philip ||= Person.new
 philip.update({
   name: "Philip Brocoum",
-  about: "Remote full-time Ruby on Rails developer.",
+  about: "Full-stack Ruby on Rails developer",
   location: "Portland, OR",
   github: "https://github.com/stedwick",
   linkedin: "https://www.linkedin.com/in/philipbrocoum",

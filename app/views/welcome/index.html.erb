@@ -3,18 +3,18 @@
     <div class="col">
       <%= image_2x @person.profile_pic, id: "profile-pic", class: "rounded-circle" %>
       <h1><%= @person.name %></h1>
-      <p class="lead">Full-stack Ruby on Rails developer</p>
-      <p>Portland, OR</p>
+      <p class="lead"><%= @person.about %></p>
+      <p><%= @person.location %></p>
       <p>
-        <%= link_to_social @person.github, "github" %>
-        <%= link_to_social @person.linkedin, "linkedin-in" %>
-        <%= link_to_social @person.facebook, "facebook" %>
-        <%= link_to_social @person.twitter, "twitter" %>
+        <%= link_to_social "github", @person.github %>
+        <%= link_to_social "linkedin-in", @person.linkedin %>
+        <%= link_to_social "facebook", @person.facebook %>
+        <%= link_to_social "twitter", @person.twitter %>
       </p>
       <br /><br />
       <p>
-        <a href="#" class="btn btn-lg btn-danger">Hire Me</a>
-        <a href="#" class="btn btn-lg btn-secondary">My Work</a>
+        <%= link_to "Hire Me", "#", class: "btn btn-lg btn-danger" %>
+        <%= link_to "My Work", "#", class: "btn btn-lg btn-secondary" %>
       </p>
     </div>
   </div>
