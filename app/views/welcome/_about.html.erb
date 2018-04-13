@@ -7,3 +7,11 @@
     </div>
   </div>
 </div>
+
+<div class="container pb-3 <%= cycle "bg-light", "bg-white" %>" id="skills">
+  <div class="row py-3">
+    <% @person.items.skills.each do |skill| %>
+      <%= render "items/skill", skill: skill %>
+    <% end %>
+  </div>
+</div>
