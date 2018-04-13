@@ -37,7 +37,7 @@ item.update({
   name: "Ruby on Rails",
   link: "http://rubyonrails.org",
   icon: "ruby.png",
-  description: "Rails 2, 3, 4, and 5.",
+  description: "Backend development with Rails 2, 3, 4, and 5",
   blurb: nil,
   dates: nil,
   type_of: "skill",
@@ -47,3 +47,98 @@ item.update({
 })
 
 i+=1
+item = philip.items.find_by name: "HTML/CSS/JS"
+item ||= philip.items.build
+item.update({
+  name: "HTML/CSS/JS",
+  link: "http://html-css-js.com/",
+  icon: "html.png",
+  description: "Frontend design with HTML 5, CSS 3, and JavaScript",
+  type_of: "skill",
+  order: i
+})
+
+i+=1
+item = philip.items.find_by name: "MySQL/PostgreSQL"
+item ||= philip.items.build
+item.update({
+  name: "MySQL/PostgreSQL",
+  link: "https://www.mysql.com/",
+  icon: "mysql.png",
+  description: "Database administration for MySQL & PostgreSQL",
+  type_of: "skill",
+  order: i
+})
+
+i+=1
+item = philip.items.find_by name: "Amazon AWS"
+item ||= philip.items.build
+item.update({
+  name: "Amazon AWS",
+  link: "https://aws.amazon.com/",
+  icon: "aws.png",
+  description: "Scaling AWS infrastructure, including EC2, RDS, and S3",
+  type_of: "skill",
+  order: i
+})
+
+i+=1
+item = philip.items.find_by name: "Linux"
+item ||= philip.items.build
+item.update({
+  name: "Linux",
+  link: "https://www.linux.org/",
+  icon: "linux.png",
+  description: "Ubuntu & CentOS server administration / bash scripting",
+  type_of: "skill",
+  order: i
+})
+
+i+=1
+item = philip.items.find_by name: "git"
+item ||= philip.items.build
+item.update({
+  name: "git",
+  link: "https://git-scm.com/",
+  icon: "git.png",
+  description: "git is my preferred SCM",
+  type_of: "skill",
+  order: i
+})
+
+i+=1
+item = philip.items.find_by name: "git"
+item ||= philip.items.build
+item.update({
+  name: "git",
+  link: "https://git-scm.com/",
+  icon: "git.png",
+  description: "git is my preferred SCM",
+  type_of: "skill",
+  order: i
+})
+
+i+=1
+item = philip.items.find_by name: "Vagrant"
+item ||= philip.items.build
+item.update({
+  name: "Vagrant",
+  link: "https://www.vagrantup.com/",
+  icon: "vagrant.png",
+  description: "Development environments nearly identical to production",
+  type_of: "skill",
+  order: i
+})
+
+i+=1
+item = philip.items.find_by name: "Social Networks"
+item ||= philip.items.build
+item.update({
+  name: "Social Networks",
+  link: "https://www.facebook.com/",
+  icon: "facebook.png",
+  fa: nil, # "fab fa-facebook facebook-blue sq64x64",
+  description: "API integration with Facebook, LinkedIn, and Twitter",
+  type_of: "skill",
+  order: i
+})
