@@ -15,3 +15,16 @@
     border: 0.25rem solid $light;
   }
 }
+
+#career-sites {
+  .card-header {
+    img {
+      height: 32px;
+      width: 32px;
+      float: left;
+    }
+    a {
+      line-height: 32px;
+    }
+  }
+}

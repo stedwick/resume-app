@@ -1,0 +1,17 @@
+<div class="container pt-4 pb-3 <%= cycle "bg-light", "bg-white" %>" id="career">
+  <div class="row pt-3">
+    <div class="col">
+      <h2 class="text-center">My Career</h2>
+      <hr class="pb-1" />
+      <%= markdown @person.work_blurb %>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-3 <%= cycle "bg-light", "bg-white" %>" id="career-sites">
+  <div class="row pt-3">
+    <% @person.items.sites.each do |site| %>
+      <%= render "items/site", site: site %>
+    <% end %>
+  </div>
+</div>
