@@ -16,7 +16,7 @@ philip.update({
   linkedin: "https://www.linkedin.com/in/philipbrocoum",
   facebook: "https://www.facebook.com/philip.brocoum",
   twitter: "https://twitter.com/stedwick",
-  career_blurb: "I started developing for the web in 2008. I now have a decade of experience working with large apps, and I'm familiar with the newest and most popular technologies.\n\nThis site you're reading is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). View the source on [GitHub](https://github.com/stedwick/resume).",
+  career_blurb: "I started developing for the web in 2008. I now have a decade of experience working with large apps, and I'm familiar with the newest and most popular technologies.\n\nThis site you're reading is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). View the source on [GitHub](https://github.com/stedwick/resume).\n\nMy skills include:",
   skills_blurb: "I work with all the current tools and platforms for Ruby on Rails web development. I'm constantly trying out the cutting-edge as well, such as Docker.",
   education_blurb: "I'm a mathematician by education, and my first job was as a math teacher in New York City. Mathematics and programming are closely related, and I quickly took to my new career as a Ruby developer.",
   work_blurb: "This is a gallery of the Rails sites that I've worked on professionally.",
@@ -71,10 +71,10 @@ item.update({
 })
 
 i+=1
-item = philip.items.find_by name: "Deployment"
+item = philip.items.find_by name: "App Deployment"
 item ||= philip.items.build
 item.update({
-  name: "Deployment",
+  name: "App Deployment",
   link: "https://www.phusionpassenger.com",
   icon: "web.png",
   description: "Production Rails on Phusion Passenger, Apache, Nginx, and Puma",
@@ -113,7 +113,7 @@ item.update({
   name: "Chef",
   link: "https://www.chef.io",
   icon: "chef.png",
-  description: "Infrastructure as code",
+  description: "Provisioning infrastructure as code",
   type_of: "skill",
   order: i
 })
@@ -137,7 +137,7 @@ item.update({
   name: "git",
   link: "https://github.com/stedwick",
   icon: "git.png",
-  description: "git-flow is my preferred workflow",
+  description: "git-flow is my preferred branching model",
   type_of: "skill",
   order: i
 })
@@ -149,7 +149,7 @@ item.update({
   name: "Vagrant",
   link: "https://www.vagrantup.com/",
   icon: "vagrant.png",
-  description: "Keeping dev and production nearly identical",
+  description: "Keeping dev and production parity",
   type_of: "skill",
   order: i
 })
