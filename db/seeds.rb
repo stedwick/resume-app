@@ -65,19 +65,19 @@ item.update({
   name: "MySQL/PostgreSQL",
   link: "https://www.mysql.com/",
   icon: "mysql.png",
-  description: "Database administration for MySQL & PostgreSQL",
+  description: "DB administration of MySQL & PostgreSQL",
   type_of: "skill",
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "Web Servers"
+item = philip.items.find_by name: "Deployment"
 item ||= philip.items.build
 item.update({
-  name: "Web Servers",
+  name: "Deployment",
   link: "https://www.phusionpassenger.com",
   icon: "web.png",
-  description: "Deploying Rails with Phusion Passenger, Apache 2, Nginx, and Puma",
+  description: "Production Rails on Phusion Passenger, Apache, Nginx, and Puma",
   type_of: "skill",
   order: i
 })
@@ -95,11 +95,35 @@ item.update({
 })
 
 i+=1
+item = philip.items.find_by name: "Docker"
+item ||= philip.items.build
+item.update({
+  name: "Docker",
+  link: "https://www.docker.com",
+  icon: "docker.png",
+  description: "Containerized deployment with Docker, Docker Compose, and Docker Machine",
+  type_of: "skill",
+  order: i
+})
+
+i+=1
+item = philip.items.find_by name: "Chef"
+item ||= philip.items.build
+item.update({
+  name: "Chef",
+  link: "https://www.chef.io",
+  icon: "chef.png",
+  description: "Infrastructure as code",
+  type_of: "skill",
+  order: i
+})
+
+i+=1
 item = philip.items.find_by name: "Linux"
 item ||= philip.items.build
 item.update({
   name: "Linux",
-  link: "https://www.linux.org/",
+  link: "https://www.ubuntu.com",
   icon: "linux.png",
   description: "Ubuntu & CentOS server administration / bash scripting",
   type_of: "skill",
@@ -119,49 +143,24 @@ item.update({
 })
 
 i+=1
-item = philip.items.find_by name: "Docker"
-item ||= philip.items.build
-item.update({
-  name: "Docker",
-  link: "https://www.docker.com",
-  icon: "docker.png",
-  description: "Containerized deployment for dev and prod with Docker, Docker Compose, and Docker Machine",
-  type_of: "skill",
-  order: i
-})
-
-i+=1
-item = philip.items.find_by name: "Chef"
-item ||= philip.items.build
-item.update({
-  name: "Chef",
-  link: "https://www.chef.io",
-  icon: "chef.png",
-  description: "Infrastructure as code",
-  type_of: "skill",
-  order: i
-})
-
-i+=1
 item = philip.items.find_by name: "Vagrant"
 item ||= philip.items.build
 item.update({
   name: "Vagrant",
   link: "https://www.vagrantup.com/",
   icon: "vagrant.png",
-  description: "Keeping dev, staging, and production as identical as possible",
+  description: "Keeping dev and production nearly identical",
   type_of: "skill",
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "Social Networks"
+item = philip.items.find_by name: "Social Networking"
 item ||= philip.items.build
 item.update({
-  name: "Social Networks",
-  link: "https://www.facebook.com/",
+  name: "Social Networking",
+  link: "https://www.facebook.com/philip.brocoum",
   icon: "social.png",
-  fa: nil, # "fab fa-facebook facebook-blue sq64x64",
   description: "API integration with Facebook, Twitter, Instagram, and LinkedIn",
   type_of: "skill",
   order: i
