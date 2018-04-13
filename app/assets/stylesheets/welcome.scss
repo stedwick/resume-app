@@ -2,8 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#cover {
+#bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -10vh;
   background-size: cover;
+  background-image: url(image-path("mt-hood.jpg"));
+}
+
+#cover {
   #cover-row {
     min-height: 100vh;
   }
