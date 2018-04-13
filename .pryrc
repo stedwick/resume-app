@@ -8,4 +8,4 @@ if defined?(PryRails::RAILS_PROMPT)
 end
 
 Pry.config.pager = false
-Pry.config.history.file = "/resume/.irb_history"
+Pry.config.history.file = "/rails/.irb_history"
