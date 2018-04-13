@@ -1,0 +1,10 @@
+<div class="container <%= cycle "bg-light", "bg-white" %>" id="skills">
+  <div class="row pt-3">
+    <div class="w-100">
+      <h2 class="text-center">My Skillset</h2>
+    </div>
+    <% @person.items.skills.each do |skill| %>
+      <%= render "items/skill", skill: skill %>
+    <% end %>
+  </div>
+</div>
