@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20180413005930) do
     t.string "description"
     t.text "blurb"
     t.string "dates"
+    t.string "location"
     t.string "type_of"
     t.string "image"
     t.string "fa"

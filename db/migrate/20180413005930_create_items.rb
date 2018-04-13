@@ -7,6 +7,7 @@ class CreateItems < ActiveRecord::Migration[5.1]
       t.string :description
       t.text :blurb
       t.string :dates
+      t.string :location
       t.string :type_of, index: true
       t.string :image
       t.string :fa
