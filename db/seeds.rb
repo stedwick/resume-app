@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# People
 philip = Person.find_by name: "Philip Brocoum"
 philip ||= Person.new
 philip.update({
@@ -30,6 +31,7 @@ philip.update({
   background_img: "mt-hood.jpg"
 })
 
+# Skills
 i=0
 item = philip.items.find_by name: "Ruby on Rails"
 item ||= philip.items.build
@@ -163,5 +165,74 @@ item.update({
   icon: "social.png",
   description: "API integration with Facebook, Twitter, Instagram, and LinkedIn",
   type_of: "skill",
+  order: i
+})
+
+# Sites
+i=0
+item = philip.items.find_by name: "Merit"
+item ||= philip.items.build
+item.update({
+  name: "Merit",
+  link: "http://www.meritpages.com/",
+  icon: "merit.png",
+  description: "Ruby on Rails software engineer",
+  blurb: "Meritpages.com is the largest Rails app I've ever worked on, comprising eight Rails apps deployed in a services architecture on AWS.",
+  dates: "(2013 &ndash; 2016)",
+  location: "New York, NY",
+  type_of: "site",
+  image: "merit-site.jpg",
+  fa: nil,
+  order: i
+})
+
+i+=1
+item = philip.items.find_by name: "Go Green Ride"
+item ||= philip.items.build
+item.update({
+  name: "Go Green Ride",
+  link: "http://www.gogreenride.com",
+  icon: "gogreenride.png",
+  description: "Ruby on Rails consultant",
+  blurb: "GoGreenRide.com is a ride-sharing backend similar to Uber, deployed on Rackspace using Passenger.",
+  dates: "(2013)",
+  location: "Bayonne, NJ",
+  type_of: "site",
+  image: "gogreenride-site.jpg",
+  fa: nil,
+  order: i
+})
+
+i+=1
+item = philip.items.find_by name: "readabout.me"
+item ||= philip.items.build
+item.update({
+  name: "readabout.me",
+  link: "http://web.archive.org/web/20130601003317/http://readabout.me/",
+  icon: "readaboutme.png",
+  description: "Ruby on Rails software engineer",
+  blurb: "readabout.me was the predecessor to Meritpages.com, deployed on Heroku.",
+  dates: "(2012 &ndash; 2013)",
+  location: "New York, NY",
+  type_of: "site",
+  image: "readaboutme-site.jpg",
+  fa: nil,
+  order: i
+})
+
+i+=1
+item = philip.items.find_by name: "readMedia"
+item ||= philip.items.build
+item.update({
+  name: "readMedia",
+  link: "https://web.archive.org/web/20110811204633/http://www.readmedia.com:80/",
+  icon: "readmedia.png",
+  description: "Ruby on Rails web developer",
+  blurb: "readMedia sends press releases via mail merge for their clients. I upgraded the existing Rails 2 app to Rails 3, and was one of three developers working full-time on the app for many years.",
+  dates: "(2008 &ndash; 2013)",
+  location: "New York, NY",
+  type_of: "site",
+  image: "readmedia-site.jpg",
+  fa: nil,
   order: i
 })
