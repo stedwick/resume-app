@@ -1,23 +1,351 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  link: MyString
-  icon: MyString
-  description: MyString
-  blurb: MyText
-  dates: MyString
-  type_of: MyString
-  image: MyString
-  fa: MyString
+item_1:
+  id: 1
+  name: Ruby on Rails
+  link: http://rubyonrails.org
+  icon: ruby.png
+  image: 
+  description: Backend development with Rails 2, 3, 4, and 5
+  blurb: 
+  location: 
+  dates: 
+  person_id: 1
+  order: 0
+  type: Skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:14:24.599673000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:14:24.599673000 Z
+    zone: *2
+    time: *3
 
-two:
-  name: MyString
-  link: MyString
-  icon: MyString
-  description: MyString
-  blurb: MyText
-  dates: MyString
-  type_of: MyString
-  image: MyString
-  fa: MyString
+item_2:
+  id: 2
+  name: HTML/CSS/JS
+  link: http://html-css-js.com/
+  icon: html.png
+  image: 
+  description: Frontend design with HTML 5, CSS 3, and jQuery
+  blurb: 
+  location: 
+  dates: 
+  person_id: 1
+  order: 1
+  type: Skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:14:24.610854000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:14:24.610854000 Z
+    zone: *2
+    time: *3
+
+item_3:
+  id: 3
+  name: MySQL/PostgreSQL
+  link: https://www.mysql.com/
+  icon: mysql.png
+  image: 
+  description: DB administration of MySQL & PostgreSQL
+  blurb: 
+  location: 
+  dates: 
+  person_id: 1
+  order: 2
+  type: Skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:14:24.620889000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:14:24.620889000 Z
+    zone: *2
+    time: *3
+
+item_4:
+  id: 4
+  name: App Deployment
+  link: https://www.phusionpassenger.com
+  icon: web.png
+  image: 
+  description: Production Rails on Phusion Passenger, Apache, Nginx, and Puma
+  blurb: 
+  location: 
+  dates: 
+  person_id: 1
+  order: 3
+  type: Skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:14:24.631692000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:14:24.631692000 Z
+    zone: *2
+    time: *3
+
+item_5:
+  id: 5
+  name: AWS/Azure
+  link: https://aws.amazon.com/
+  icon: aws.png
+  image: 
+  description: Scaling cloud infrastructure in AWS and Azure, including EC2, RDS,
+    and S3
+  blurb: 
+  location: 
+  dates: 
+  person_id: 1
+  order: 4
+  type: Skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:14:24.641592000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:14:24.641592000 Z
+    zone: *2
+    time: *3
+
+item_6:
+  id: 6
+  name: Docker
+  link: https://www.docker.com
+  icon: docker.png
+  image: 
+  description: Containerized deployment with Docker, Docker Compose, and Docker Machine
+  blurb: 
+  location: 
+  dates: 
+  person_id: 1
+  order: 5
+  type: Skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:14:24.651665000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:14:24.651665000 Z
+    zone: *2
+    time: *3
+
+item_7:
+  id: 7
+  name: Chef
+  link: https://www.chef.io
+  icon: chef.png
+  image: 
+  description: Provisioning infrastructure as code
+  blurb: 
+  location: 
+  dates: 
+  person_id: 1
+  order: 6
+  type: Skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:14:24.662216000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:14:24.662216000 Z
+    zone: *2
+    time: *3
+
+item_8:
+  id: 8
+  name: Linux
+  link: https://www.ubuntu.com
+  icon: linux.png
+  image: 
+  description: Ubuntu & CentOS server administration / bash scripting
+  blurb: 
+  location: 
+  dates: 
+  person_id: 1
+  order: 7
+  type: Skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:14:24.672276000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:14:24.672276000 Z
+    zone: *2
+    time: *3
+
+item_9:
+  id: 9
+  name: git
+  link: https://github.com/stedwick
+  icon: git.png
+  image: 
+  description: git-flow is my preferred branching model
+  blurb: 
+  location: 
+  dates: 
+  person_id: 1
+  order: 8
+  type: Skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:14:24.682433000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:14:24.682433000 Z
+    zone: *2
+    time: *3
+
+item_10:
+  id: 10
+  name: Vagrant
+  link: https://www.vagrantup.com/
+  icon: vagrant.png
+  image: 
+  description: Keeping dev and production parity
+  blurb: 
+  location: 
+  dates: 
+  person_id: 1
+  order: 9
+  type: Skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:14:24.692296000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:14:24.692296000 Z
+    zone: *2
+    time: *3
+
+item_11:
+  id: 11
+  name: Social Networking
+  link: https://www.facebook.com/philip.brocoum
+  icon: social.png
+  image: 
+  description: API integration with Facebook, Twitter, Instagram, and LinkedIn
+  blurb: 
+  location: 
+  dates: 
+  person_id: 1
+  order: 10
+  type: Skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:14:24.702067000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:14:24.702067000 Z
+    zone: *2
+    time: *3
+
+item_12:
+  id: 12
+  name: Merit
+  link: http://www.meritpages.com/
+  icon: merit.png
+  image: merit-site.jpg
+  description: Ruby on Rails engineer
+  blurb: Meritpages.com is the largest Rails app I've ever worked on, comprising eight
+    Rails apps deployed in a services architecture on AWS.
+  location: New York, NY
+  dates: "(2013 &ndash; 2016)"
+  person_id: 1
+  order: 0
+  type: Site
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:17:51.918974000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:17:51.918974000 Z
+    zone: *2
+    time: *3
+
+item_13:
+  id: 13
+  name: Go Green Ride
+  link: http://www.gogreenride.com
+  icon: gogreenride.png
+  image: gogreenride-site.jpg
+  description: Ruby on Rails consultant
+  blurb: GoGreenRide.com is a ride-sharing backend similar to Uber, deployed on Rackspace
+    using Passenger.
+  location: Bayonne, NJ
+  dates: "(2013)"
+  person_id: 1
+  order: 1
+  type: Site
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:17:51.930322000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:17:51.930322000 Z
+    zone: *2
+    time: *3
+
+item_14:
+  id: 14
+  name: readabout.me
+  link: http://web.archive.org/web/20130601003317/http://readabout.me/
+  icon: readaboutme.png
+  image: readaboutme-site.jpg
+  description: Ruby on Rails engineer
+  blurb: readabout.me was the predecessor to Meritpages.com, deployed on Heroku.
+  location: New York, NY
+  dates: "(2012 &ndash; 2013)"
+  person_id: 1
+  order: 2
+  type: Site
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:17:51.941081000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:17:51.941081000 Z
+    zone: *2
+    time: *3
+
+item_15:
+  id: 15
+  name: readMedia
+  link: https://web.archive.org/web/20110811204633/http://www.readmedia.com:80/
+  icon: readmedia.png
+  image: readmedia-site.jpg
+  description: Ruby on Rails developer
+  blurb: readMedia sends press releases via mail merge for their clients. I upgraded
+    the existing Rails 2 app to Rails 3, and was one of three developers working full-time
+    on the app for many years.
+  location: New York, NY
+  dates: "(2008 &ndash; 2013)"
+  person_id: 1
+  order: 3
+  type: Site
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-04-14 01:17:51.951569000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-04-14 01:17:51.951569000 Z
+    zone: *2
+    time: *3
