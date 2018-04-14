@@ -33,146 +33,134 @@ philip.update({
 
 # Skills
 i=0
-item = philip.items.find_by name: "Ruby on Rails"
-item ||= philip.items.build
-item.update({
+skill = philip.skills.find_by name: "Ruby on Rails"
+skill ||= philip.skills.build
+skill.update({
   name: "Ruby on Rails",
   link: "http://rubyonrails.org",
   icon: "ruby.png",
   description: "Backend development with Rails 2, 3, 4, and 5",
   blurb: nil,
   dates: nil,
-  type_of: "skill",
   image: nil,
-  fa: nil,
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "HTML/CSS/JS"
-item ||= philip.items.build
-item.update({
+skill = philip.skills.find_by name: "HTML/CSS/JS"
+skill ||= philip.skills.build
+skill.update({
   name: "HTML/CSS/JS",
   link: "http://html-css-js.com/",
   icon: "html.png",
   description: "Frontend design with HTML 5, CSS 3, and jQuery",
-  type_of: "skill",
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "MySQL/PostgreSQL"
-item ||= philip.items.build
-item.update({
+skill = philip.skills.find_by name: "MySQL/PostgreSQL"
+skill ||= philip.skills.build
+skill.update({
   name: "MySQL/PostgreSQL",
   link: "https://www.mysql.com/",
   icon: "mysql.png",
   description: "DB administration of MySQL & PostgreSQL",
-  type_of: "skill",
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "App Deployment"
-item ||= philip.items.build
-item.update({
+skill = philip.skills.find_by name: "App Deployment"
+skill ||= philip.skills.build
+skill.update({
   name: "App Deployment",
   link: "https://www.phusionpassenger.com",
   icon: "web.png",
   description: "Production Rails on Phusion Passenger, Apache, Nginx, and Puma",
-  type_of: "skill",
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "AWS/Azure"
-item ||= philip.items.build
-item.update({
+skill = philip.skills.find_by name: "AWS/Azure"
+skill ||= philip.skills.build
+skill.update({
   name: "AWS/Azure",
   link: "https://aws.amazon.com/",
   icon: "aws.png",
   description: "Scaling cloud infrastructure in AWS and Azure, including EC2, RDS, and S3",
-  type_of: "skill",
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "Docker"
-item ||= philip.items.build
-item.update({
+skill = philip.skills.find_by name: "Docker"
+skill ||= philip.skills.build
+skill.update({
   name: "Docker",
   link: "https://www.docker.com",
   icon: "docker.png",
   description: "Containerized deployment with Docker, Docker Compose, and Docker Machine",
-  type_of: "skill",
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "Chef"
-item ||= philip.items.build
-item.update({
+skill = philip.skills.find_by name: "Chef"
+skill ||= philip.skills.build
+skill.update({
   name: "Chef",
   link: "https://www.chef.io",
   icon: "chef.png",
   description: "Provisioning infrastructure as code",
-  type_of: "skill",
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "Linux"
-item ||= philip.items.build
-item.update({
+skill = philip.skills.find_by name: "Linux"
+skill ||= philip.skills.build
+skill.update({
   name: "Linux",
   link: "https://www.ubuntu.com",
   icon: "linux.png",
   description: "Ubuntu & CentOS server administration / bash scripting",
-  type_of: "skill",
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "git"
-item ||= philip.items.build
-item.update({
+skill = philip.skills.find_by name: "git"
+skill ||= philip.skills.build
+skill.update({
   name: "git",
   link: "https://github.com/stedwick",
   icon: "git.png",
   description: "git-flow is my preferred branching model",
-  type_of: "skill",
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "Vagrant"
-item ||= philip.items.build
-item.update({
+skill = philip.skills.find_by name: "Vagrant"
+skill ||= philip.skills.build
+skill.update({
   name: "Vagrant",
   link: "https://www.vagrantup.com/",
   icon: "vagrant.png",
   description: "Keeping dev and production parity",
-  type_of: "skill",
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "Social Networking"
-item ||= philip.items.build
-item.update({
+skill = philip.skills.find_by name: "Social Networking"
+skill ||= philip.skills.build
+skill.update({
   name: "Social Networking",
   link: "https://www.facebook.com/philip.brocoum",
   icon: "social.png",
   description: "API integration with Facebook, Twitter, Instagram, and LinkedIn",
-  type_of: "skill",
   order: i
 })
 
 # Sites
 i=0
-item = philip.items.find_by name: "Merit"
-item ||= philip.items.build
-item.update({
+site = philip.sites.find_by name: "Merit"
+site ||= philip.sites.build
+site.update({
   name: "Merit",
   link: "http://www.meritpages.com/",
   icon: "merit.png",
@@ -180,16 +168,14 @@ item.update({
   blurb: "Meritpages.com is the largest Rails app I've ever worked on, comprising eight Rails apps deployed in a services architecture on AWS.",
   dates: "(2013 &ndash; 2016)",
   location: "New York, NY",
-  type_of: "site",
   image: "merit-site.jpg",
-  fa: nil,
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "Go Green Ride"
-item ||= philip.items.build
-item.update({
+site = philip.sites.find_by name: "Go Green Ride"
+site ||= philip.sites.build
+site.update({
   name: "Go Green Ride",
   link: "http://www.gogreenride.com",
   icon: "gogreenride.png",
@@ -197,16 +183,14 @@ item.update({
   blurb: "GoGreenRide.com is a ride-sharing backend similar to Uber, deployed on Rackspace using Passenger.",
   dates: "(2013)",
   location: "Bayonne, NJ",
-  type_of: "site",
   image: "gogreenride-site.jpg",
-  fa: nil,
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "readabout.me"
-item ||= philip.items.build
-item.update({
+site = philip.sites.find_by name: "readabout.me"
+site ||= philip.sites.build
+site.update({
   name: "readabout.me",
   link: "http://web.archive.org/web/20130601003317/http://readabout.me/",
   icon: "readaboutme.png",
@@ -214,16 +198,14 @@ item.update({
   blurb: "readabout.me was the predecessor to Meritpages.com, deployed on Heroku.",
   dates: "(2012 &ndash; 2013)",
   location: "New York, NY",
-  type_of: "site",
   image: "readaboutme-site.jpg",
-  fa: nil,
   order: i
 })
 
 i+=1
-item = philip.items.find_by name: "readMedia"
-item ||= philip.items.build
-item.update({
+site = philip.sites.find_by name: "readMedia"
+site ||= philip.sites.build
+site.update({
   name: "readMedia",
   link: "https://web.archive.org/web/20110811204633/http://www.readmedia.com:80/",
   icon: "readmedia.png",
@@ -231,8 +213,6 @@ item.update({
   blurb: "readMedia sends press releases via mail merge for their clients. I upgraded the existing Rails 2 app to Rails 3, and was one of three developers working full-time on the app for many years.",
   dates: "(2008 &ndash; 2013)",
   location: "New York, NY",
-  type_of: "site",
   image: "readmedia-site.jpg",
-  fa: nil,
   order: i
 })

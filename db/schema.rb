@@ -19,21 +19,20 @@ ActiveRecord::Schema.define(version: 20180413005930) do
     t.string "name"
     t.string "link"
     t.string "icon"
+    t.string "image"
     t.string "description"
     t.text "blurb"
-    t.string "dates"
     t.string "location"
-    t.string "type_of"
-    t.string "image"
-    t.string "fa"
-    t.integer "order"
+    t.string "dates"
     t.bigint "person_id"
+    t.integer "order"
+    t.string "type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_items_on_name"
     t.index ["order"], name: "index_items_on_order"
     t.index ["person_id"], name: "index_items_on_person_id"
-    t.index ["type_of"], name: "index_items_on_type_of"
+    t.index ["type"], name: "index_items_on_type"
   end
 
   create_table "people", force: :cascade do |t|

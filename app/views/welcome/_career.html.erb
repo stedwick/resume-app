@@ -10,7 +10,7 @@
 
 <div class="container pb-3 <%= cycle "bg-light", "bg-white" %>" id="career-sites">
   <div class="row pt-3">
-    <% @person.items.sites.each do |site| %>
+    <% @person.sites.each do |site| %>
       <%= render "items/site", site: site %>
     <% end %>
   </div>
