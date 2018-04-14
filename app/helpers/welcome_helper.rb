@@ -9,7 +9,7 @@ module WelcomeHelper
       host = site.name.downcase
     end
     host = "www.#{host}" unless host.include?("www.")
-    host = "#{host}.com" unless host.include?(".com")
+    host = "#{host}.com" unless host.include?(".com") or host.include?(".me")
     return host
   end
 end

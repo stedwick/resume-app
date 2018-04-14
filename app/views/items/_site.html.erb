@@ -7,7 +7,7 @@
     <div class="card-body">
       <h4 class="card-title text-danger"><%= site.name %></h4>
       <p class="card-text"><%= site.blurb %></p>
-      <%= link_to image_2x(site.image, class: "w-100 mb-3"), site.link %>
+      <%= link_to image_2x(site.image, class: "img-fluid mb-3"), site.link %>
       <%= link_to "Visit #{site.name}", site.link, class: "btn btn-primary" %>
     </div>
     <div class="card-footer text-muted">
