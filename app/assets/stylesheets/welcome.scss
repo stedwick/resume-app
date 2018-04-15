@@ -3,11 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #cover {
-  background-size: cover;
   background-position-x: center;
+  background-size: cover;
   #cover-row {
     min-height: 100vh;
   }
+  @media (min-height: 1367px) {
+    #cover-row {
+      min-height: unset;
+      height: 1367px;
+    }
+  }
+  @media (min-width: 2428px) {
+    background-size: 2428px auto;
+  }
+
   img#profile-pic {
     width: 60%;
     height: 60%;
