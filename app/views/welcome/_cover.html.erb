@@ -1,9 +1,9 @@
 <div id="cover" class="bg-dark">
   <div class="container text-center text-light">
     <div class="row pt-3" id="cover-row">
-      <div class="col align-self-start"></div>
+      <div class="col-12 align-self-start"></div>
       <div class="w-100"></div>
-      <div class="col align-self-center">
+      <div class="col-12 align-self-center">
         <%= image_2x @person.profile_pic, id: "profile-pic", class: "rounded-circle mb-3" %>
         <h1><%= @person.name %></h1>
         <p class="lead"><%= @person.about %></p>
@@ -19,7 +19,7 @@
         </p>
       </div>
       <div class="w-100"></div>
-      <div class="col align-self-end my-4">
+      <div class="col-12 align-self-end my-4">
         <p class="text-secondary">Scroll to read more...<br /><i class='fas fa-chevron-down fa-lg'></i></p>
       </div>
     </div>
