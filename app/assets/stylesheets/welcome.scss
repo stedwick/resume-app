@@ -17,6 +17,9 @@
   @media (min-width: 3441px) {
     background-size: 3441px auto;
   }
+  @media (pointer: fine) and (hover: hover) {
+    background-attachment: fixed;
+  }
 
   img#profile-pic {
     width: 60%;
