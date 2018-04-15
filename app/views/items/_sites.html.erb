@@ -1,0 +1,25 @@
+<div class="row d-sm-none">
+  <% sites.each do |site| %>
+    <div class="col-12 pt-3">
+      <%= render "items/site", site: site %>
+    </div>
+  <% end %>
+</div>
+
+<% sites.in_groups_of(2).each do |_sites| %>
+  <div class="row my-4 d-none d-sm-block d-xl-none">
+    <%= render "items/site_deck", sites: _sites %>
+  </div>
+<% end %>
+
+<!-- <% sites.in_groups_of(3).each do |_sites| %>
+  <div class="row my-4 d-none d-lg-block d-xl-none">
+    <%= render "items/site_deck", sites: _sites %>
+  </div>
+<% end %> -->
+
+<% sites.in_groups_of(4).each do |_sites| %>
+  <div class="row my-4 d-none d-xl-block">
+    <%= render "items/site_deck", sites: _sites %>
+  </div>
+<% end %>

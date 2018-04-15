@@ -1,5 +1,5 @@
 <div class="<%= cycle "bg-light", "bg-white" %>">
-  <div class="container pt-3 pb-3" id="career">
+  <div class="container py-3" id="career">
     <div class="row pt-3">
       <div class="col">
         <h2 class="text-center">My Career</h2>
@@ -10,11 +10,11 @@
   </div>
 </div>
 
-  <div class="container pb-3" id="career-sites">
-    <div class="row pt-3">
-      <% @person.sites.each do |site| %>
-        <%= render "items/site", site: site %>
-      <% end %>
-    </div>
+<div class="<%= cycle "bg-light", "bg-white" %>">
+  <div class="container pt-4 pb-3" id="career-sites">
+      <div class="col-12">
+        <h4 class="text-center">Gallery</h4>
+      </div>
+    <%= render "items/sites", sites: @person.sites %>
   </div>
 </div>
