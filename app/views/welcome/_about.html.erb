@@ -1,17 +1,21 @@
-<div class="container pt-4 pb-3 <%= cycle "bg-light", "bg-white" %>" id="about">
-  <div class="row pt-3" id="about-row">
-    <div class="col">
-      <h2 class="text-center">About Me</h2>
-      <hr class="pb-1" />
-      <%= markdown @person.career_blurb %>
+<div class="<%= cycle "bg-light", "bg-white" %>">
+  <div class="container pt-4 pb-3" id="about">
+    <div class="row pt-3" id="about-row">
+      <div class="col">
+        <h2 class="text-center">About Me</h2>
+        <hr class="pb-1" />
+        <%= markdown @person.career_blurb %>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="container pb-3 <%= cycle "bg-light", "bg-white" %>" id="skills">
-  <div class="row py-3">
-    <% @person.skills.each do |skill| %>
-      <%= render "items/skill", skill: skill %>
-    <% end %>
+<div class="<%= cycle "bg-light", "bg-white" %>">
+  <div class="container pb-3">
+    <div class="row py-3">
+      <% @person.skills.each do |skill| %>
+        <%= render "items/skill", skill: skill %>
+      <% end %>
+    </div>
   </div>
 </div>
