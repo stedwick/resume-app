@@ -15,8 +15,22 @@
 @import "bootstrap";
 @import "welcome";
 
+$font-family-phil-header: 'Work Sans', $font-family-base;
+$font-family-phil-base: 'Open Sans', $font-family-base;
+
+h1 {
+  font-weight: lighter;
+}
+h1, h2, h3, h4, h5 {
+  font-family: $font-family-phil-header;
+  @media ( min-resolution: 1.25dppx ) {
+    font-weight: lighter;
+  }
+}
+
 body {
   display: none;
+  Font-Family: $font-family-phil-base;
 }
 
 html.fontawesome-i2svg-active body {

@@ -5,7 +5,8 @@
       <div class="w-100"></div>
       <div class="col-12 align-self-center">
         <%= image_2x @person.profile_pic, id: "profile-pic", class: "rounded-circle mb-3" %>
-        <h1><%= @person.name %></h1>
+        <h1 class="display-4 d-none d-sm-block"><%= @person.name %></h1>
+        <h1 class="d-sm-none"><%= @person.name %></h1>
         <p class="lead"><%= @person.about %></p>
         <p class="mb-4"><%= @person.location %></p>
         <p>
@@ -19,7 +20,7 @@
         </p>
       </div>
       <div class="w-100"></div>
-      <div class="col-12 align-self-end my-4">
+      <div class="col-12 align-self-end mb-4">
         <p class="text-secondary">Scroll to read more...<br /><i class='fas fa-chevron-down fa-lg'></i></p>
       </div>
     </div>
