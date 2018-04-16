@@ -3,19 +3,19 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #cover {
-  background-position-x: center;
+  background-position: center;
   background-size: cover;
   #cover-row {
     min-height: 100vh;
   }
-  @media (min-height: 1367px) {
+  @media (min-height: 1366px) {
     #cover-row {
       min-height: unset;
-      height: 1367px;
+      height: 1366px;
     }
   }
-  @media (min-width: 3441px) {
-    background-size: 3441px auto;
+  @media (min-width: 3440px) {
+    background-size: 3440px auto;
   }
   @media (pointer: fine) and (hover: hover) {
     background-attachment: fixed;
