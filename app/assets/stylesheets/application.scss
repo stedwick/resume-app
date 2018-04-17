@@ -54,8 +54,8 @@ h1, h2, h3, h4, h5 {
 // https://blog.fontawesome.com/how-to-use-asynchronous-font-loading-e774227a5b3c
 i.fa-fw {
   display: inline-block;
-  width: 1.75em;
+  width: 1.25em;
 }
 i.fa-fw::before {
-  content: "\00a0\00a0\00a0";
+  content: "\00a0";
 }
