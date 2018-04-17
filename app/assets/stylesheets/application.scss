@@ -27,7 +27,7 @@ h1 {
 }
 h1, h2, h3, h4, h5 {
   font-family: $font-family-phil-header;
-  @media ( min-resolution: 1.25dppx ) {
-    font-weight: lighter;
-  }
+  // @media ( min-resolution: 1.25dppx ) {
+  //   font-weight: lighter;
+  // }
 }
