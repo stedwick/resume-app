@@ -1,16 +1,18 @@
-<div class="card">
-  <div class="card-header text-center">
-    <%= image_tag site.icon %>
-    <%= link_to pretty_site_link(site), site.link %>
-  </div>
-  <div class="card-body">
-    <h4 class="card-title text-danger"><%= site.name %></h4>
-    <%= link_to image_2x(site.image, class: "img-fluid mb-3"), site.link %>
-    <p class="card-text"><%= site.blurb %></p>
-    <%= link_to "Visit #{site.name}", site.link, class: "btn btn-primary" %>
-  </div>
-  <div class="card-footer text-muted">
-    <%= site.description %><br />
-    <%= site.location %> <em><%= site.dates.html_safe %></em>
+<div class="col-12 col-md-6 col-xl-3 pt-4">
+  <div class="card h-100">
+    <div class="card-header text-center">
+      <%= image_tag site.icon %>
+      <%= link_to pretty_site_link(site), site.link %>
+    </div>
+    <div class="card-body">
+      <h4 class="card-title text-danger"><%= site.name %></h4>
+      <%= link_to image_2x(site.image, class: "img-fluid mb-3"), site.link %>
+      <p class="card-text"><%= site.blurb %></p>
+      <%= link_to "Visit #{site.name}", site.link, class: "btn btn-primary" %>
+    </div>
+    <div class="card-footer text-muted">
+      <%= site.description %><br />
+      <%= site.location %> <em><%= site.dates.html_safe %></em>
+    </div>
   </div>
 </div>

@@ -1,9 +1,0 @@
-<div class="card-deck">
-  <% sites.each do |site| %>
-    <% unless site.blank? %>
-      <%= render "items/site", site: site %>
-    <% else %>
-      <div class="card" style="visibility: hidden;"></div>
-    <% end %>
-  <% end %>
-</div>

@@ -18,6 +18,10 @@
 $font-family-phil-header: 'Work Sans', $font-family-base;
 $font-family-phil-base: 'Open Sans', $font-family-base;
 
+body {
+  font-family: $font-family-phil-base;
+}
+
 h1 {
   font-weight: lighter;
 }
@@ -26,13 +30,4 @@ h1, h2, h3, h4, h5 {
   @media ( min-resolution: 1.25dppx ) {
     font-weight: lighter;
   }
-}
-
-body {
-  display: none;
-  Font-Family: $font-family-phil-base;
-}
-
-html.fontawesome-i2svg-active body {
-  display: initial;
 }
