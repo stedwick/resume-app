@@ -2,13 +2,11 @@
 <html lang="en">
   <head>
     <title><%= @person.name %> &mdash; <%= @person.about %></title>
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
-
-    <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Work+Sans:300,400" rel="stylesheet">
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <style><%= render "layouts/style.scss" %></style>
@@ -19,6 +17,22 @@
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      $(document).ready(function(){
+        WebFont.load({
+          google: {
+            families: ['Work Sans:300'],
+            text: "<%= @person.name %>"
+          }
+        });
+        WebFont.load({
+          google: {
+            families: ['Work Sans:400', 'Open Sans']
+          }
+        });
+      });
+    </script>
     <script><%= render "layouts/script.coffee" %></script>
   </body>
 </html>
