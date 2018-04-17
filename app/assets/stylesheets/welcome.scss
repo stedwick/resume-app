@@ -7,9 +7,7 @@
   background-size: cover;
   #cover-row {
     min-height: 100vh;
-  }
-  @media (min-height: 1366px) {
-    #cover-row {
+    @media (min-height: 1366px) {
       min-height: unset;
       height: 1366px;
     }

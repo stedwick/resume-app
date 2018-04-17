@@ -15,19 +15,16 @@
 @import "bootstrap";
 @import "welcome";
 
-$font-family-phil-header: 'Work Sans', $font-family-base;
-$font-family-phil-base: 'Open Sans', $font-family-base;
+$font-family-base: 'Open Sans', $font-family-base;
+$font-family-header: 'Work Sans', $font-family-base;
 
 body {
-  font-family: $font-family-phil-base;
+  font-family: $font-family-base;
 }
 
 h1 {
   font-weight: lighter;
 }
 h1, h2, h3, h4, h5 {
-  font-family: $font-family-phil-header;
-  // @media ( min-resolution: 1.25dppx ) {
-  //   font-weight: lighter;
-  // }
+  font-family: $font-family-header;
 }

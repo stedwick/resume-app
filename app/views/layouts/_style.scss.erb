@@ -1,13 +1,9 @@
 #cover {
   background-image: url(<%= image_path @person.background_img %>);
-}
-@media (min-width: 576px) {
-  #cover {
+  @media (min-width: 576px) {
     background-image: url(<%= image_path filename_append(@person.background_img, "-md") %>);
   }
-}
-@media (min-width: 1200px) {
-  #cover {
+  @media (min-width: 1200px) {
     background-image: url(<%= image_path filename_append(@person.background_img, "-lg") %>);
   }
 }
