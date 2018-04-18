@@ -15,11 +15,10 @@
   <body>
     <%= yield %>
 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
-      $(document).ready(function(){
+      document.addEventListener("DOMContentLoaded", function(event) {
         WebFont.load({
           google: {
             families: ['Work Sans:300'],

@@ -13,9 +13,9 @@
         <h1 class="d-sm-none"><%= @person.name %></h1>
         <p class="lead"><%= @person.about %></p>
         <p class="mb-4"><%= @person.location %></p>
-        <p>
+        <p class="icons">
           <%= link_to_social "github", @person.github %>
-          <%= link_to_social "linkedin-in", @person.linkedin %>
+          <%= link_to_social "linkedin", @person.linkedin %>
           <%= link_to_social "facebook", @person.facebook %>
           <%= link_to_social "twitter", @person.twitter %>
         </p>
@@ -25,7 +25,7 @@
       </div>
       <div class="w-100"></div>
       <div class="col-12 align-self-end mb-4">
-        <p class="text-secondary">Scroll to read more...<br /><i class='fas fa-chevron-down fa-lg fa-fw'></i></p>
+        <p class="text-secondary">Scroll to read more...<br /><%= image_tag("icon-secondary-chevron-down.svg", style="width: 20px; height: 20px;") %></p>
       </div>
     </div>
   </div>

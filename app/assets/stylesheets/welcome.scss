@@ -33,6 +33,20 @@
       }
     }
   }
+
+  p.icons {
+    a {
+      margin-right: 0.25rem;
+      &:last-of-type { margin-right: 0rem; }
+      img { width: 32px; height: 32px; }
+      img.icon-light { display: inline; }
+      img.icon-dark { display: none; }
+    }
+    a:hover {
+      img.icon-light { display: none; }
+      img.icon-dark { display: inline; }
+    }
+  }
 }
 
 #about-skills {
