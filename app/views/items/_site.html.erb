@@ -5,8 +5,10 @@
       <%= link_to pretty_site_link(site), site.link %>
     </div>
     <div class="card-body">
+      <div class="wide">
+        <%= link_to image_2x(site.image, class: "fixed-ratio-content"), site.link, class: "fixed-ratio mb-3" %>
+      </div>
       <h4 class="card-title text-danger"><%= site.name %></h4>
-      <%= link_to image_2x(site.image, class: "fixed-ratio-content"), site.link, class: "fixed-ratio mb-3" %>
       <p class="card-text"><%= site.blurb %></p>
       <%= link_to "Visit #{site.name}", site.link, class: "btn btn-primary" %>
     </div>
