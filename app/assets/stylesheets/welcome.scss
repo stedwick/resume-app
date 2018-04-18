@@ -38,13 +38,10 @@
     a {
       margin-right: 0.25rem;
       &:last-of-type { margin-right: 0rem; }
-      img { width: 32px; height: 32px; }
-      img.icon-light { display: inline; }
-      img.icon-dark { display: none; }
-    }
-    a:hover {
-      img.icon-light { display: none; }
-      img.icon-dark { display: inline; }
+      svg { 
+        font-size: 32px;
+        margin: 0.12em 0.12em -0.1em 0.12em;
+      }
     }
   }
 }
