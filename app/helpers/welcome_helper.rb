@@ -1,6 +1,6 @@
 module WelcomeHelper
   def link_to_social fa, source, options={}
-    link_to "<i class='fab fa-#{fa} fa-lg fa-fw'></i>".html_safe, source, options.merge({class: "btn btn-lg btn-outline-light p-2"})
+    link_to "A<svg class=\"icon icon-#{fa}\"><use xlink:href=\"#icon-#{fa}\"></use></svg>".html_safe, source, options.merge({class: "btn btn-lg btn-outline-light p-2"})
   end
 
   def pretty_site_link site
