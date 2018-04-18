@@ -36,12 +36,9 @@
 
   p.icons {
     a {
-      margin-right: 0.25rem;
+      margin-right: 0.33rem;
       &:last-of-type { margin-right: 0rem; }
-      svg { 
-        font-size: 32px;
-        margin: 0.12em 0.12em -0.1em 0.12em;
-      }
+      font-size: 2rem;
     }
   }
 }
