@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'csrf/meta_tags'
+
   get 'welcome/index'
 
   root 'welcome#index'

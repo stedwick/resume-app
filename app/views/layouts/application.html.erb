@@ -6,7 +6,6 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <style><%= render "layouts/style.scss" %></style>
@@ -20,7 +19,23 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function(event) {
+      // ready helper
+      window.ready = function(fn) {
+        if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
+          fn();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
+      }
+      // parseHTML helper
+      window.parseHTML = function(str) {
+        var tmp = document.implementation.createHTMLDocument();
+        tmp.body.innerHTML = str;
+        return tmp.body.children;
+      };
+
+      // document.ready
+      ready(function(){
         WebFont.load({
           google: {
             families: ['Work Sans:300'],
@@ -32,6 +47,28 @@
             families: ['Work Sans:400', 'Open Sans']
           }
         });
+
+        // Ajax Csrf
+        var request = new XMLHttpRequest();
+        request.open('GET', '<%= csrf_meta_tags_path %>', true);
+        request.onload = function() {
+          if (request.status >= 200 && request.status < 400) {
+            // Success!
+            var resp = request.responseText;
+            var el_csrfs = parseHTML(resp);
+            var el_head = document.querySelector('head');
+            l = el_csrfs.length;
+            for(var i = 0; i < l; i++) {
+              el_head.appendChild(el_csrfs[0]); // moves, not copies
+            }
+          } else {
+            // We reached our target server, but it returned an error
+          }
+        };
+        request.onerror = function() {
+          // There was a connection error of some sort
+        };
+        request.send();
       });
     </script>
     <script><%= render "layouts/script.coffee" %></script>
