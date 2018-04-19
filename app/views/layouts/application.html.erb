@@ -23,27 +23,6 @@
     <%= yield %>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script>
-      // ready helper
-      window.ready = function(fn) {
-        if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading"){
-          fn();
-        } else {
-          document.addEventListener('DOMContentLoaded', fn);
-        }
-      }
-      // parseHTML helper
-      window.parseHTML = function(str) {
-        var tmp = document.implementation.createHTMLDocument();
-        tmp.body.innerHTML = str;
-        return tmp.body.children;
-      };
-
-      // document.ready
-      ready(function(){
-
-      });
-    </script>
     <script><%= render "layouts/script.coffee" %></script>
   </body>
 </html>
