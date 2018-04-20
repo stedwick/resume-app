@@ -1,6 +1,22 @@
 class WelcomeController < ApplicationController
   def index
-    # Caching
+    # Caching: In production, cached and revalidated after one hour. On staging, revalidated after one minute and cleared after five. In development, revalidated every 15 seconds and cleared every minute.
+    if Rails.env.development?
+      updated_at_rounded = Time.now.utc.to_a
+      updated_at_rounded[0] = updated_at_rounded[0] - (updated_at_rounded[0] % 60)
+      updated_at_rounded = Time.utc *updated_at_rounded
+      if @person.updated_at.utc != updated_at_rounded
+        @person.touch time: updated_at_rounded
+      end
+    end
+    if Rails.env.staging?
+      updated_at_rounded = Time.now.utc.to_a
+      updated_at_rounded[1] = updated_at_rounded[1] - (updated_at_rounded[1] % 5)
+      updated_at_rounded = Time.utc *updated_at_rounded
+      if @person.updated_at.utc != updated_at_rounded
+        @person.touch time: updated_at_rounded
+      end
+    end
     my_etag          = @person
     my_last_modified = @person.updated_at.utc
     my_expires_in    = 1.hour
