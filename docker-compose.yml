@@ -17,7 +17,7 @@ services:
       - RAILS_LOG_TO_STDOUT
       - SECRET_KEY_BASE
   db:
-    image: postgres:10.3
+    image: postgres:10.3-alpine
     volumes:
       - db:/var/lib/postgresql/data
 volumes:
