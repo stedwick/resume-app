@@ -6,6 +6,8 @@ services:
       dockerfile: ./config/nginx/Dockerfile
     volumes:
       - ./public:/rails/public:ro
+    depends_on:
+      - app
   app:
     build: .
     volumes:
@@ -16,6 +18,8 @@ services:
       - RACK_ENV
       - RAILS_LOG_TO_STDOUT
       - SECRET_KEY_BASE
+    depends_on:
+      - db
   db:
     image: postgres:10.3-alpine
     volumes:
@@ -26,4 +30,4 @@ volumes:
 networks:
   default:
     external:
-      name: ${COMPOSE_PROJECT_NAME:-resume}_dev
+      name: ${COMPOSE_PROJECT_NAME:-resume}
