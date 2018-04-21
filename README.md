@@ -10,6 +10,13 @@ To run my resume site locally:
     brew cask install docker
     ```
 
+1. Clone this repository
+
+    ```bash
+    git clone git@gitlab.com:stedwick/resume.git
+    cd resume
+    ```
+
 1. Build the project
 
     ```bash
