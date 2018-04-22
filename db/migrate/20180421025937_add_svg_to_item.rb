@@ -1,0 +1,5 @@
+class AddSvgToItem < ActiveRecord::Migration[5.1]
+  def change
+    add_column :items, :svg, :string
+  end
+end

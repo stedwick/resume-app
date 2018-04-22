@@ -9,6 +9,12 @@ module ApplicationHelper
     image_tag source, options.merge({"data-rjs": path_2x})
   end
 
+  def svg_tag source, options={}
+    options[:class] = "icon-container #{options[:class]}"
+    return content_tag(:div, "<svg class=\"icon icon-#{source}\"><use xlink:href=\"#icon-#{source}\"></use></svg>".html_safe, options)
+  end
+  
+
   def markdown md
     MarkdownRenderer.render(md).html_safe
   end

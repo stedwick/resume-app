@@ -1,0 +1,9 @@
+<div class="row" id="education">
+  <div class="col-12 d-md-none">
+    <h4 class="text-center">Education</h4>
+    <%= markdown @person.education_blurb %>
+  </div>
+  <% @person.schools.each do |school| %>
+    <%= render "items/school", school: school %>
+  <% end %>
+</div>

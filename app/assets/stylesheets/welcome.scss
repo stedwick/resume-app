@@ -74,3 +74,16 @@
     }
   }
 }
+
+# TODO
+#projects, #education {
+  .media {
+    svg.icon {
+      font-size: 64px;
+    }
+    a {
+      color: $light;
+      &.btn:hover { color: $dark; }
+    }
+  }
+}

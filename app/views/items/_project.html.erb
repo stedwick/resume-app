@@ -1,0 +1,10 @@
+<div class="col-12">
+  <div class="media">
+    <%= link_to image_2x_or_svg(project.icon, project.svg, class: "mr-3"), project.link %>
+    <div class="media-body">
+      <h5><%= link_to project.name, project.link %></h5>
+      <p><%= project.blurb %></p>
+      <p><%= link_to project.description, project.link, class: "btn btn-sm btn-outline-light" %></p>
+    </div>
+  </div>
+</div>

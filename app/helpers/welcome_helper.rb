@@ -12,4 +12,10 @@ module WelcomeHelper
     host = "#{host}.com" unless host.include?(".com") or host.include?(".me")
     return host
   end
+
+  # TODO
+  def image_2x_or_svg img, svg, options={}
+    return image_2x(img, options) if svg.blank?
+    return svg_tag(svg, options)
+  end
 end

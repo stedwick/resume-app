@@ -216,3 +216,53 @@ site.update({
   image: "readmedia-site.jpg",
   order: i
 })
+
+# Projects
+i=0
+project = philip.projects.find_by name: "Sci-Fi Voter"
+project ||= philip.projects.build
+project.update({
+  name: "Sci-Fi Voter",
+  link: "https://scifi-voter.herokuapp.com",
+  svg: "star-trek",
+  description: "Cast your vote",
+  blurb: "Sci-Fi Voter definitively answers the question, \"What is the best Star Trek episode?\"",
+  order: i
+})
+
+i+=1
+project = philip.projects.find_by name: "Munch"
+project ||= philip.projects.build
+project.update({
+  name: "Munch",
+  link: "https://stedwick.github.io/munch/",
+  svg: "cookie",
+  description: "Test your wit",
+  blurb: "The game of Munch! Can you beat the computer? I doubt it...",
+  order: i
+})
+
+# Schools
+i=0
+school = philip.schools.find_by name: "MIT"
+school ||= philip.schools.build
+school.update({
+  name: "Massachusetts Institute of Technology",
+  link: "http://web.mit.edu",
+  svg: "mit",
+  description: "B.S. in Math",
+  blurb: "I received my degree in Mathematics from MIT in 2005. I have two publications: \"Reflections in a Euclidean Space,\" and \"Exploration of Reflection Holograms and Their Fringes With a Scanning Electron Microscope.\"",
+  order: i
+})
+
+i+=1
+school = philip.schools.find_by name: "NYU"
+school ||= philip.schools.build
+school.update({
+  name: "New York University",
+  link: "https://www.nyu.edu",
+  svg: "nyu",
+  description: "M.A. in Math Ed.",
+  blurb: "I attended NYU through Math for America where I expanded my theoretical knowledge of mathematics with practical knowledge of teaching.",
+  order: i
+})
