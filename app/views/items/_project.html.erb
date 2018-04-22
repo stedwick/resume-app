@@ -1,6 +1,6 @@
 <div class="col-12">
   <div class="media">
-    <%= link_to image_2x_or_svg(project.icon, project.svg, class: "mr-3"), project.link %>
+    <%= link_to svg_tag(project.svg, class: "mr-3"), project.link %>
     <div class="media-body">
       <h5><%= link_to project.name, project.link %></h5>
       <p><%= project.blurb %></p>

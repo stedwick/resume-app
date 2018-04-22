@@ -14,7 +14,6 @@ module ApplicationHelper
     return content_tag(:div, "<svg class=\"icon icon-#{source}\"><use xlink:href=\"#icon-#{source}\"></use></svg>".html_safe, options)
   end
   
-
   def markdown md
     MarkdownRenderer.render(md).html_safe
   end
