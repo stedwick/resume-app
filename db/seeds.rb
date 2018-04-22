@@ -146,6 +146,17 @@ skill.update({
 })
 
 i+=1
+skill = philip.skills.find_by name: "Photoshop"
+skill ||= philip.skills.build
+skill.update({
+  name: "Photoshop",
+  link: "https://www.adobe.com/products/photoshop.html",
+  icon: "photoshop.png",
+  description: "Image editing and optimization",
+  order: i
+})
+
+i+=1
 skill = philip.skills.find_by name: "Social Networking"
 skill ||= philip.skills.build
 skill.update({
