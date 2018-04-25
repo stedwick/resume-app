@@ -83,7 +83,7 @@
     }
     a {
       color: $light;
-      &.btn:hover { color: $dark; }
+      &.btn.btn-outline-light:hover { color: $dark; }
     }
   }
 }

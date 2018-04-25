@@ -253,27 +253,53 @@ project.update({
   order: i
 })
 
+i+=1
+project = philip.projects.find_by name: "Taggy for Evernote"
+project ||= philip.projects.build
+project.update({
+  name: "Taggy for Evernote",
+  link: "https://github.com/stedwick/taggy-for-evernote",
+  svg: "evernote",
+  description: "View on GitHub",
+  blurb: "Taggy for Evernote was my app in the Mac App Store. Taggy makes your Evernote tags function as you want them to: hierarchically.",
+  order: i
+})
+
+i+=1
+project = philip.projects.find_by name: "Boggle Solver"
+project ||= philip.projects.build
+project.update({
+  name: "Boggle Solver",
+  link: "https://youtu.be/Ey0XDupLo6U",
+  svg: "grid",
+  description: "View on YouTube",
+  blurb: "My boggle solver is for winning, er... cheating at the Facebook Scramble game.",
+  order: i
+})
+
 # Schools
 i=0
-school = philip.schools.find_by name: "MIT"
+school = philip.schools.find_by name: "Massachusetts Institute of Technology"
 school ||= philip.schools.build
 school.update({
   name: "Massachusetts Institute of Technology",
   link: "http://web.mit.edu",
   svg: "mit",
-  description: "B.S. in Math",
-  blurb: "I received my degree in Mathematics from MIT in 2005. I have two publications: \"Reflections in a Euclidean Space,\" and \"Exploration of Reflection Holograms and Their Fringes With a Scanning Electron Microscope.\"",
+  description: "B.S. in Mathematics",
+  location: "Cambridge, MA",
+  dates: "(2001 &ndash; 2005)",
+  blurb: "I have two publications: \"Reflections in a Euclidean Space,\" and \"Exploration of Reflection Holograms and Their Fringes With a Scanning Electron Microscope.\"",
   order: i
 })
 
 i+=1
-school = philip.schools.find_by name: "NYU"
+school = philip.schools.find_by name: "New York University"
 school ||= philip.schools.build
 school.update({
   name: "New York University",
   link: "https://www.nyu.edu",
   svg: "nyu",
   description: "M.A. in Math Ed.",
-  blurb: "I attended NYU through Math for America where I expanded my theoretical knowledge of mathematics with practical knowledge of teaching.",
+  blurb: "I received my M.A. in Math Ed. from NYU in 2006. I attended NYU through Math for America where I expanded my theoretical knowledge of mathematics with practical knowledge of teaching.",
   order: i
 })
