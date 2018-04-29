@@ -21,7 +21,7 @@ philip.update({
   skills_blurb: "I work with all the current tools and platforms for Ruby on Rails web development. I'm constantly trying out the cutting-edge as well, such as Docker.",
   education_blurb: "I'm a mathematician by education, and my first job was as a math teacher in New York City. Mathematics and programming are closely related, and I quickly took to my new career as a Ruby developer.",
   work_blurb: "This is a gallery of the Rails sites that I've worked on professionally.",
-  projects_blurb: "This is a gallery of the Rails sites that I've worked on professionally.",
+  projects_blurb: "I've been a full-stack Ruby on Rails web developer since 2008. I have nearly a decade of experience working with large web applications running on Ruby on Rails, MySQL, Amazon AWS, Linux, git, Chef, and more. This is a gallery of the Rails sites that I've worked on professionally.",
   old_blurb: "I work with all the current tools and platforms for Ruby on Rails web development. I'm constantly trying out the cutting-edge as well, such as Docker.",
   personal_blurb: "I maintain a healthy work/life balance. If you would like to learn more about me as a person, beyond my Ruby professional life, check out the links below!",
   contact_blurb: "Are you looking for a full-time Senior Ruby on Rails Developer or Engineering Manager? I'm based in New York City, but I also have years of experience working remotely. Drop me a line.",
@@ -177,7 +177,7 @@ site.update({
   icon: "merit.png",
   description: "Ruby on Rails engineer",
   blurb: "Meritpages.com is the largest Rails app I've ever worked on, comprising eight Rails apps deployed in a services architecture on AWS.",
-  dates: "(2013 &ndash; 2016)",
+  dates: "2013 &ndash; 2016",
   location: "New York, NY",
   image: "merit-site.jpg",
   order: i
@@ -192,7 +192,7 @@ site.update({
   icon: "gogreenride.png",
   description: "Ruby on Rails consultant",
   blurb: "GoGreenRide.com is a ride-sharing backend similar to Uber, deployed on Rackspace using Passenger.",
-  dates: "(2013)",
+  dates: "2013",
   location: "Bayonne, NJ",
   image: "gogreenride-site.jpg",
   order: i
@@ -207,7 +207,7 @@ site.update({
   icon: "readaboutme.png",
   description: "Ruby on Rails engineer",
   blurb: "readabout.me was the predecessor to Meritpages.com, deployed on Heroku.",
-  dates: "(2012 &ndash; 2013)",
+  dates: "2012 &ndash; 2013",
   location: "New York, NY",
   image: "readaboutme-site.jpg",
   order: i
@@ -222,7 +222,7 @@ site.update({
   icon: "readmedia.png",
   description: "Ruby on Rails developer",
   blurb: "readMedia sends press releases via mail merge for their clients. I upgraded the existing Rails 2 app to Rails 3, and was one of three developers working full-time on the app for many years.",
-  dates: "(2008 &ndash; 2013)",
+  dates: "2008 &ndash; 2013",
   location: "New York, NY",
   image: "readmedia-site.jpg",
   order: i
@@ -266,6 +266,18 @@ project.update({
 })
 
 i+=1
+project = philip.projects.find_by name: "Arkanoid"
+project ||= philip.projects.build
+project.update({
+  name: "Arkanoid",
+  link: "https://github.com/stedwick/arkanoid",
+  svg: "gamecontroller",
+  description: "View on GitHub",
+  blurb: "Arkanoid is my take on the classic Nintendo Breakout game. Written in C for MS DOS long ago.",
+  order: i
+})
+
+i+=1
 project = philip.projects.find_by name: "Boggle Solver"
 project ||= philip.projects.build
 project.update({
@@ -287,8 +299,8 @@ school.update({
   svg: "mit",
   description: "B.S. in Mathematics",
   location: "Cambridge, MA",
-  dates: "(2001 &ndash; 2005)",
-  blurb: "I have two publications: \"Reflections in a Euclidean Space,\" and \"Exploration of Reflection Holograms and Their Fringes With a Scanning Electron Microscope.\"",
+  dates: "class of 2005",
+  blurb: "I have two publications: [\"Reflections in a Euclidean Space,\"](http://ocw.mit.edu/courses/mathematics/18-06ci-linear-algebra-communications-intensive-spring-2004/projects/1806ciphil.pdf) and [\"Exploration of Reflection Holograms and Their Fringes With a Scanning Electron Microscope.\"](https://www.scribd.com/document/17377101/Exploration-of-Reflection-Holograms-and-Their-Fringes-With-a-Scanning-Electron-Microscope)",
   order: i
 })
 
@@ -299,7 +311,24 @@ school.update({
   name: "New York University",
   link: "https://www.nyu.edu",
   svg: "nyu",
-  description: "M.A. in Math Ed.",
-  blurb: "I received my M.A. in Math Ed. from NYU in 2006. I attended NYU through Math for America where I expanded my theoretical knowledge of mathematics with practical knowledge of teaching.",
+  location: "New York, NY",
+  dates: "class of 2006",
+  description: "M.A. in Math Education",
+  blurb: "I received my M.A. in Math Education from NYU in 2006. I attended NYU through Math for America where I expanded my theoretical knowledge of mathematics with practical knowledge of teaching.",
+  order: i
+})
+
+# Jobs
+i=0
+job = philip.jobs.find_by name: "NYC Department of Education"
+job ||= philip.jobs.build
+job.update({
+  name: "NYC Department of Education",
+  link: "http://schools.nyc.gov",
+  svg: "classroom",
+  description: "Math Teacher, Grades 6&ndash;8",
+  location: "New York, NY",
+  dates: "2006 &ndash; 2007",
+  blurb: "After getting my Master's degree, I taught 6&ndash;8th grade math from 2006 &ndash; 2007 at [PS184 Shuang Wen School](http://www.ps184m.org) in NYC's Chinatown as part of the [Math for America](https://www.mathforamerica.org) program.",
   order: i
 })
