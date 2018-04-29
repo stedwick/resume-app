@@ -27,6 +27,7 @@ class WelcomeController < ApplicationController
         my_expires_in = 15.seconds
       else
         my_expires_in = 1.seconds
+        my_etag = rand
       end
     end
     fresh_when etag: my_etag, last_modified: my_last_modified, public: true
