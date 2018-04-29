@@ -20,6 +20,9 @@ services:
       - SECRET_KEY_BASE
     depends_on:
       - db
+    # Allow debugging in development
+    stdin_open: true
+    tty: true
   db:
     image: postgres:10.3-alpine
     volumes:
