@@ -256,6 +256,18 @@ project.update({
 })
 
 i+=1
+project = philip.projects.find_by name: "Docker Dashboard"
+project ||= philip.projects.build
+project.update({
+  name: "Docker Dashboard",
+  link: "https://github.com/stedwick/docker-dashboard/",
+  svg: "terminal",
+  description: "View on GitHub",
+  blurb: "Simple terminal dashboard for Docker using Tmux",
+  order: i
+})
+
+i+=1
 project = philip.projects.find_by name: "Taggy for Evernote"
 project ||= philip.projects.build
 project.update({
@@ -279,17 +291,17 @@ project.update({
   order: i
 })
 
-i+=1
-project = philip.projects.find_by name: "Boggle Solver"
-project ||= philip.projects.build
-project.update({
-  name: "Boggle Solver",
-  link: "https://youtu.be/Ey0XDupLo6U",
-  svg: "grid",
-  description: "View on YouTube",
-  blurb: "My boggle solver is for winning, er... cheating at the Facebook Scramble game.",
-  order: i
-})
+# i+=1
+# project = philip.projects.find_by name: "Boggle Solver"
+# project ||= philip.projects.build
+# project.update({
+#   name: "Boggle Solver",
+#   link: "https://youtu.be/Ey0XDupLo6U",
+#   svg: "grid",
+#   description: "View on YouTube",
+#   blurb: "My boggle solver is for winning, er... cheating at the Facebook Scramble game.",
+#   order: i
+# })
 
 # Schools
 i=0
@@ -341,10 +353,8 @@ interest = philip.interests.find_by name: "My YouTube Channel"
 interest ||= philip.interests.build
 interest.update({
   name: "My YouTube Channel",
-  # location: "YouTube",
   link: "https://www.youtube.com/watch?v=YQtbcgBWobA",
   icon: "youtube",
-  # description: "My 15 minutes of fame",
   blurb: "At over 1 million views, my Yoshimoto Cube video is my 15 minutes of fame.",
   order: i
 })
@@ -354,10 +364,8 @@ interest = philip.interests.find_by name: "US Chess Federation"
 interest ||= philip.interests.build
 interest.update({
   name: "US Chess Federation",
-  # location: "Chess",
   link: "http://www.uschess.org/msa/MbrDtlMain.php?14448371",
   icon: "chess",
-  # description: "Blitz rating 2000-ish",
   blurb: "Rated 1618 USCF and 2000-ish on [Lichess](https://lichess.org/@/PhilChessPDX), I'm always looking to improve.",
   order: i
 })
@@ -367,10 +375,8 @@ interest = philip.interests.find_by name: "MIT Sailing Club"
 interest ||= philip.interests.build
 interest.update({
   name: "MIT Sailing Club",
-  # location: "Sailing",
   link: "http://sailing.mit.edu",
   icon: "sailing",
-  # description: "Lifetime member, MIT Sailing Club",
   blurb: "I'm a lifetime member. If we are in Boston, I'll take you out on the Charles.",
   order: i
 })
@@ -380,10 +386,8 @@ interest = philip.interests.find_by name: "Toast the Dog!"
 interest ||= philip.interests.build
 interest.update({
   name: "Toast the Dog!",
-  # location: "Toast",
   link: "https://www.instagram.com/toastwiththemost/",
   icon: "toast",
-  # description: "Such a good dog!",
   blurb: "Such a good dog, but he sometimes sits onkjf ssadkl",
   order: i
 })
