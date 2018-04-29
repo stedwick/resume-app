@@ -4,26 +4,9 @@
     <div class="media-body">
       <h5><%= link_to school.name, school.link %></h5>
       <div class="addendum">
-        <em>&mdash; <%= school.description %> (<%= school.dates %>)</em>
+        <em>&mdash; <%= school.description.html_safe %> (<%= school.dates.html_safe %>)</em>
       </div>
-      <p><%= markdown school.blurb %></p>
+      <p><%= markdown school.blurb   %></p>
     </div>
   </div>
 </div>
-
-<!-- TODO <div class="col-12 pt-3">
-  <div class="card bg-transparent border-secondary">
-    <div class="card-header text-center h1 border-secondary">
-      <%= link_to svg_tag(school.svg), school.link %>
-    </div>
-    <div class="card-body">
-      <h4 class="card-title text-danger"><%= school.name %></h4>
-      <p class="card-text"><%= school.blurb %></p>
-      <%= link_to "Visit #{school.name}", school.link, class: "btn btn-primary" %>
-    </div>
-    <div class="card-footer text-muted border-secondary">
-      <%= school.description %><br />
-      <%= school.location %> <em>(<%= school.dates.try :html_safe %>)</em>
-    </div>
-  </div>
-</div> -->

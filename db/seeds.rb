@@ -314,7 +314,7 @@ school.update({
   location: "New York, NY",
   dates: "class of 2006",
   description: "M.A. in Math Education",
-  blurb: "I received my M.A. in Math Education from NYU in 2006. I attended NYU through Math for America where I expanded my theoretical knowledge of mathematics with practical knowledge of teaching.",
+  blurb: "I attended NYU through [Math for America](https://www.mathforamerica.org) where I expanded my theoretical knowledge of mathematics with practical knowledge of teaching.",
   order: i
 })
 
@@ -326,9 +326,9 @@ job.update({
   name: "NYC Department of Education",
   link: "http://schools.nyc.gov",
   svg: "classroom",
-  description: "Math Teacher, Grades 6&ndash;8",
+  description: "Math Teacher",
   location: "New York, NY",
   dates: "2006 &ndash; 2007",
-  blurb: "After getting my Master's degree, I taught 6&ndash;8th grade math from 2006 &ndash; 2007 at [PS184 Shuang Wen School](http://www.ps184m.org) in NYC's Chinatown as part of the [Math for America](https://www.mathforamerica.org) program.",
+  blurb: "After getting my Master's degree, I taught 6&ndash;8th grade math from 2006 &ndash; 2007 at the [Shuang Wen School (P.S. 184)](http://www.ps184m.org) in Chinatown.",
   order: i
 })

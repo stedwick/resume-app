@@ -6,4 +6,8 @@
   <% @person.schools.each do |school| %>
     <%= render "items/school", school: school %>
   <% end %>
+  <hr class="w-100 mx-3" />
+  <% @person.jobs.each do |job| %>
+    <%= render "items/school", school: job %>
+  <% end %>
 </div>
