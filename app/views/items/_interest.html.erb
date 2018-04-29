@@ -1,0 +1,9 @@
+<div class="col-12 col-md-6 col-lg-4 col-xl-3 pt-3">
+  <div class="media">
+    <%= link_to image_2x(interest.icon, class: "mr-3"), interest.link %>
+    <div class="media-body">
+      <h5><%= link_to interest.name, interest.link %></h5>
+      <p><%= markdown interest.blurb %></p>
+    </div>
+  </div>
+</div>

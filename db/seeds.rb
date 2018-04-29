@@ -332,3 +332,56 @@ job.update({
   blurb: "After getting my Master's degree, I taught 6&ndash;8th grade math from 2006 &ndash; 2007 at the [Shuang Wen School (P.S. 184)](http://www.ps184m.org) in Chinatown.",
   order: i
 })
+
+# Interests
+i=0
+interest = philip.interests.find_by name: "My YouTube Channel"
+interest ||= philip.interests.build
+interest.update({
+  name: "My YouTube Channel",
+  location: "YouTube",
+  link: "https://www.youtube.com/watch?v=YQtbcgBWobA",
+  icon: "youtube",
+  description: "My 15 minutes of fame",
+  blurb: "At over 1 million views, my Yoshimoto Cube video is my 15 minutes of fame.",
+  order: i
+})
+
+i+=1
+interest = philip.interests.find_by name: "US Chess Federation"
+interest ||= philip.interests.build
+interest.update({
+  name: "US Chess Federation",
+  location: "Chess",
+  link: "https://lichess.org/@/PhilChessPDX",
+  icon: "chess",
+  description: "Blitz rating ~2000",
+  blurb: "Rated 1618 USCF and ~2000 on [Lichess](https://lichess.org/@/PhilChessPDX), I'm always looking to improve.",
+  order: i
+})
+
+i+=1
+interest = philip.interests.find_by name: "MIT Sailing Club"
+interest ||= philip.interests.build
+interest.update({
+  name: "MIT Sailing Club",
+  location: "Sailing",
+  link: "http://sailing.mit.edu",
+  icon: "sailing",
+  description: "Lifetime member, MIT Sailing Club",
+  blurb: "I'm a lifetime member. If we are in Boston, I'll take you out on the Charles.",
+  order: i
+})
+
+i+=1
+interest = philip.interests.find_by name: "Toast the Dog!"
+interest ||= philip.interests.build
+interest.update({
+  name: "Toast the Dog!",
+  location: "Toast",
+  link: "https://www.instagram.com/toastwiththemost/",
+  icon: "toast",
+  description: "Such a good dog!",
+  blurb: "Such a good dog, but he sometimes sits onkjf ssadkl",
+  order: i
+})

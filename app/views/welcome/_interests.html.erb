@@ -1,0 +1,13 @@
+<div class="bg-light text-dark">
+  <div class="container pt-3 pb-3" id="interests">
+    <div class="row py-3">
+      <div class="col-12">
+        <h3 class="text-center">Personal Life</h3>
+        <p><%= @person.personal_blurb %></p>
+      </div>
+      <% @person.interests.each do |interest| %>
+        <%= render "items/interest", interest: interest %>
+      <% end %>
+    </div>
+  </div>
+</div>
