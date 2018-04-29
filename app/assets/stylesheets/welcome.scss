@@ -81,9 +81,14 @@
     svg.icon {
       font-size: 64px;
     }
+  }
+  .media, .card {
     a {
       color: $light;
       &.btn.btn-outline-light:hover { color: $dark; }
+    }
+    .addendum {
+      color: $gray-500;
     }
   }
 }

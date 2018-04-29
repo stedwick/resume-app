@@ -4,4 +4,5 @@ class Person < ApplicationRecord
   has_many :sites
   has_many :projects
   has_many :schools
+  has_many :jobs
 end

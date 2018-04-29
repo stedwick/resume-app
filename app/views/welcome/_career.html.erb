@@ -12,10 +12,7 @@
 
 <div class="<%= cycle "bg-light", "bg-white" %>">
   <div class="container pt-3 pb-4" id="career-sites">
-    <div class="row py-3">
-      <div class="col-12">
-        <h4 class="text-center">Gallery</h4>
-      </div>
+    <div class="row pt-2 pb-3">
       <% @person.sites.each do |site| %>
         <%= render "items/site", site: site %>
       <% end %>

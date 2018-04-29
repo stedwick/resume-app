@@ -10,8 +10,14 @@ module ApplicationHelper
   end
 
   def svg_tag source, options={}
-    options[:class] = "icon-container #{options[:class]}"
-    return content_tag(:div, "<svg class=\"icon icon-#{source}\"><use xlink:href=\"#icon-#{source}\"></use></svg>".html_safe, options)
+    class_prefix = options[:class_prefix] || "svg"
+    options[:class] = "#{class_prefix}-container #{options[:class]}"
+    return content_tag(:div, "<svg class=\"#{class_prefix} #{class_prefix}-#{source}\"><use xlink:href=\"##{class_prefix}-#{source}\"></use></svg>".html_safe, options)
+  end
+  
+  def svg_icon source, options={}
+    options[:class_prefix] = "icon"
+    return svg_tag(source, options)
   end
   
   def markdown md
