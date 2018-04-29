@@ -17,13 +17,15 @@ philip.update({
   linkedin: "https://www.linkedin.com/in/philipbrocoum",
   facebook: "https://www.facebook.com/philip.brocoum",
   twitter: "https://twitter.com/stedwick",
-  career_blurb: "I started developing for the web in 2008. I now have a decade of experience working with large apps, and I'm familiar with the newest and most popular technologies.\n\nThis site you're reading is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com), [Let's Encrypt](https://letsencrypt.org/), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). View the source on [GitHub](https://github.com/stedwick/resume).",
+  career_blurb: "<div class='col-12 col-lg-6'><p>I started developing for the web in 2008. I now have a decade of experience working with large apps, and I'm familiar with the newest and most popular technologies.</p></div>
+  
+  <div class='col-12 col-lg-6'><p>This site you're reading is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com), [Let's Encrypt](https://letsencrypt.org/), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). View the source on [GitHub](https://github.com/stedwick/resume).</p></div>",
   skills_blurb: "I work with all the current tools and platforms for Ruby on Rails web development. I'm constantly trying out the cutting-edge as well, such as Docker.",
   education_blurb: "I'm a mathematician by education, and my first job was as a math teacher in New York City. Mathematics and programming are closely related, and I quickly took to my new career as a Ruby developer.",
   work_blurb: "This is a gallery of the Rails sites that I've worked on professionally.",
   projects_blurb: "I've been a full-stack Ruby on Rails web developer since 2008. I have nearly a decade of experience working with large web applications running on Ruby on Rails, MySQL, Amazon AWS, Linux, git, Chef, and more. This is a gallery of the Rails sites that I've worked on professionally.",
   old_blurb: "I work with all the current tools and platforms for Ruby on Rails web development. I'm constantly trying out the cutting-edge as well, such as Docker.",
-  personal_blurb: "I maintain a healthy work/life balance. If you would like to learn more about me as a person, beyond my Ruby professional life, check out the links below!",
+  personal_blurb: "I maintain a healthy work/life balance. If you would like to learn more about me beyond my Ruby professional life, check out the links below!",
   contact_blurb: "Are you looking for a full-time Senior Ruby on Rails Developer or Engineering Manager? I'm based in New York City, but I also have years of experience working remotely. Drop me a line.",
   phone: "1 (347) 701-0252",
   email: "philip.brocoum@gmail.com",
@@ -339,10 +341,10 @@ interest = philip.interests.find_by name: "My YouTube Channel"
 interest ||= philip.interests.build
 interest.update({
   name: "My YouTube Channel",
-  location: "YouTube",
+  # location: "YouTube",
   link: "https://www.youtube.com/watch?v=YQtbcgBWobA",
   icon: "youtube",
-  description: "My 15 minutes of fame",
+  # description: "My 15 minutes of fame",
   blurb: "At over 1 million views, my Yoshimoto Cube video is my 15 minutes of fame.",
   order: i
 })
@@ -352,11 +354,11 @@ interest = philip.interests.find_by name: "US Chess Federation"
 interest ||= philip.interests.build
 interest.update({
   name: "US Chess Federation",
-  location: "Chess",
-  link: "https://lichess.org/@/PhilChessPDX",
+  # location: "Chess",
+  link: "http://www.uschess.org/msa/MbrDtlMain.php?14448371",
   icon: "chess",
-  description: "Blitz rating ~2000",
-  blurb: "Rated 1618 USCF and ~2000 on [Lichess](https://lichess.org/@/PhilChessPDX), I'm always looking to improve.",
+  # description: "Blitz rating 2000-ish",
+  blurb: "Rated 1618 USCF and 2000-ish on [Lichess](https://lichess.org/@/PhilChessPDX), I'm always looking to improve.",
   order: i
 })
 
@@ -365,10 +367,10 @@ interest = philip.interests.find_by name: "MIT Sailing Club"
 interest ||= philip.interests.build
 interest.update({
   name: "MIT Sailing Club",
-  location: "Sailing",
+  # location: "Sailing",
   link: "http://sailing.mit.edu",
   icon: "sailing",
-  description: "Lifetime member, MIT Sailing Club",
+  # description: "Lifetime member, MIT Sailing Club",
   blurb: "I'm a lifetime member. If we are in Boston, I'll take you out on the Charles.",
   order: i
 })
@@ -378,10 +380,10 @@ interest = philip.interests.find_by name: "Toast the Dog!"
 interest ||= philip.interests.build
 interest.update({
   name: "Toast the Dog!",
-  location: "Toast",
+  # location: "Toast",
   link: "https://www.instagram.com/toastwiththemost/",
   icon: "toast",
-  description: "Such a good dog!",
+  # description: "Such a good dog!",
   blurb: "Such a good dog, but he sometimes sits onkjf ssadkl",
   order: i
 })
