@@ -230,6 +230,21 @@ site.update({
   order: i
 })
 
+i+=1
+site = philip.sites.find_by name: "Brightidea"
+site ||= philip.sites.build
+site.update({
+  name: "Brightidea",
+  link: "http://www.brightidea.com",
+  icon: "brightidea.png",
+  description: "Analyst",
+  blurb: "Brightidea provides online innovation management software. As one of their early employees, I helped with sales, onboarding, consulting, traveling, and running their software.",
+  dates: "2007 &ndash; 2008",
+  location: "New York, NY",
+  image: "brightidea-site.jpg",
+  order: i
+})
+
 # Projects
 i=0
 project = philip.projects.find_by name: "Sci-Fi Voter"
