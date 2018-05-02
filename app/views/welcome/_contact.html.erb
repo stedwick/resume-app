@@ -17,6 +17,29 @@
 
       <div class="col-12 col-md-6">
         <h4 class="text-center">My Contact Info</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <%= svg_icon "person" %> <%= @person.name %>
+          </li>
+          <li class="list-group-item">
+            <%= svg_icon "mapmarker" %> <%= @person.location %>
+          </li>
+          <li class="list-group-item">
+            <%= svg_icon "phone" %> <%= @person.phone %>
+          </li>
+          <li class="list-group-item">
+            <%= svg_icon "email" %> <%= @person.email %>
+          </li>
+          <li class="list-group-item">
+            <%= svg_icon "linkedin" %> <%= @person.linkedin %>
+          </li>
+          <li class="list-group-item">
+            <%= svg_icon "pdf" %>
+            <%= link_to "Download my resume", asset_path("Philip_Brocoum_resume.pdf") %>
+          </li>
+          <li class="list-group-item">
+          </li>
+        </ul>
       </div>
 
       <div class="col-12 col-md-6">

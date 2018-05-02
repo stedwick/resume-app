@@ -1,12 +1,14 @@
 <div class="row pt-3" id="education">
   <div class="col-12 d-md-none">
     <h3 class="text-center">Education</h3>
+    <!-- <hr class="divider" /> -->
     <%= markdown @person.education_blurb %>
   </div>
   <% @person.schools.each do |school| %>
     <%= render "items/school", school: school %>
   <% end %>
-  <hr class="w-100 mx-3" />
+  <hr class="section w-50 d-md-none" />
+  <hr class="section w-100 d-none d-md-block" />
   <% @person.jobs.each do |job| %>
     <%= render "items/school", school: job %>
   <% end %>
