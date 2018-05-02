@@ -10,12 +10,12 @@
 
 <div class="bg-white text-dark">
   <div class="container pt-3" id="contact">
-    <div class="row py-3">
-      <div class="col-12">
+    <div class="row py-3 justify-content-around">
+      <div class="col-12 col-xl-11">
         <p><%= @person.personal_blurb %></p>
       </div>
 
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6 col-xl-5 contactInfo">
         <h4 class="text-center">My Contact Info</h4>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">
@@ -25,25 +25,29 @@
             <%= svg_icon "mapmarker" %> <%= @person.location %>
           </li>
           <li class="list-group-item">
-            <%= svg_icon "phone" %> <%= @person.phone %>
+            <%= svg_icon "phone" %> <%= link_to @person.phone, "tel:#{@person.phone}" %>
           </li>
-          <li class="list-group-item">
-            <%= svg_icon "email" %> <%= @person.email %>
+          <li class="list-group-item text-truncate">
+            <%= svg_icon "email" %> <%= link_to @person.email, "mailto:#{@person.email}" %>
           </li>
-          <li class="list-group-item">
-            <%= svg_icon "linkedin" %> <%= @person.linkedin %>
+          <li class="list-group-item text-truncate">
+            <%= svg_icon "linkedin" %> <%= link_to @person.linkedin, @person.linkedin %>
           </li>
           <li class="list-group-item">
             <%= svg_icon "pdf" %>
-            <%= link_to "Download my resume", asset_path("Philip_Brocoum_resume.pdf") %>
+            <%= link_to "Download my resume", asset_path("#{@person.name.sub(' ', '_')}_resume.pdf") %>
+          </li>
+          <li class="list-group-item">
+            <%= svg_icon "vcard" %>
+            <%= link_to "Download my vCard", asset_path("#{@person.name.sub(' ', '_')}_resume.pdf") %>
           </li>
           <li class="list-group-item">
           </li>
         </ul>
       </div>
 
-      <div class="col-12 col-md-6">
-        <h4 class="text-center">Send a Message</h4>
+      <div class="col-12 col-md-6 col-xl-5">
+        <h4 class="text-center">Send Me a Message</h4>
         <%= render "form" %>
       </div>
 
