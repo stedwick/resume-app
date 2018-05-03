@@ -1,4 +1,4 @@
-<%= form_tag "/search", authenticity_token: false do %>
+<%= form_tag "https://formspree.io/#{@person.email}", authenticity_token: false do %>
   <div class="form-group">
     <div class="input-group">
       <!-- <%= label_tag :name, "Name:" %> -->
