@@ -20,14 +20,13 @@ philip.update({
   career_blurb: "<div class='col-12 col-lg-6'><p>I started developing for the web in 2008. I now have a decade of experience working with large apps, and I'm familiar with the newest and most popular technologies.</p></div>
   
   <div class='col-12 col-lg-6'><p>This site you're reading is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com), [Let's Encrypt](https://letsencrypt.org/), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). View the source on [GitHub](https://github.com/stedwick/resume).</p></div>",
-  # skills_blurb: "I work with all the current tools and platforms for Ruby on Rails web development. I'm constantly trying out the cutting-edge as well, such as Docker.",
+  # skills_blurb: "",
   education_blurb: "I'm a mathematician by education, and my first job was as a math teacher in New York City. Mathematics and programming are closely related, and I quickly took to my new career as a Ruby developer.",
-  # TODO
   work_blurb: "This is a gallery of the Rails sites that I've worked on professionally.",
   projects_blurb: "I've been a full-stack Ruby on Rails web developer since 2008. I have nearly a decade of experience working with large web applications running on Ruby on Rails, MySQL, Amazon AWS, Linux, git, Chef, and more. This is a gallery of the Rails sites that I've worked on professionally.",
   old_blurb: "I work with all the current tools and platforms for Ruby on Rails web development. I'm constantly trying out the cutting-edge as well, such as Docker.",
   personal_blurb: "I maintain a healthy work/life balance. If you would like to learn more about me beyond my Ruby professional life, check out the links below!",
-  contact_blurb: "<span class=\"dropcaps\">H</span>i there! If you've made it this far, drop me a line. I'm looking for a _**full-time remote**_ position, in either Ruby on Rails or DevOps. I have 8 years of experience working remotely: I work M-F 9-5 from my home office and I'm always available on Slack or chat, and for pair programming and video calls. I'm also happy to travel onsite on a regular schedule or as needed. Send me an email, let me know what your company is working on, and I'll speak with you soon.",
+  contact_blurb: "<span class=\"dropcaps d-none d-md-inline\">H</span><span class=\"dropcaps dcsm d-md-none\">H</span>i there! If you've made it this far, drop me a line. I'm looking for a _**full-time remote**_ position, in either Ruby on Rails or DevOps. I have 8 years of experience working remotely: I work M-F 9-5 from my home office and I'm always available on Slack or chat, and for pair programming and video calls. I'm also happy to travel onsite on a regular schedule or as needed. Send me an email, let me know what your company is working on, and I'll speak with you soon.",
   phone: "1 (347) 701-0252",
   email: "philip.brocoum@gmail.com",
   profile_pic: "philip-sq.jpg",
