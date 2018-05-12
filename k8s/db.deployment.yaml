@@ -16,3 +16,11 @@ spec:
         name: db
         ports:
         - containerPort: 5432
+        volumeMounts:
+        - name: db
+          mountPath: /var/lib/postgresql/data
+      volumes:
+      - name: db
+        persistentVolumeClaim:
+          claimName: db
+
