@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: db
+  labels:
+    app: db
+spec:
+  accessModes:
+    - ReadWriteOnce
+  capacity:
+    storage: 100M
+  storageClassName: standard
+  hostPath:
+    path: "/data/db"
+

@@ -1,15 +1,16 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: db
+  name: app
 spec:
-  volumeName: db
+  volumeName: app
   accessModes:
-    - ReadWriteOnce
+  - ReadOnlyMany
   resources:
     requests:
       storage: 90M
   storageClassName: standard
   selector:
     matchLabels:
-      app: db
+      app: app
+
