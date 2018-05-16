@@ -22,7 +22,7 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: postgres
   # Allow connecting to either docker or local database
-  host: <%= ENV["HOME"] == "/root" ? "db" : "localhost" %>
+  host: db
 
 development:
   <<: *default

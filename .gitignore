@@ -16,12 +16,6 @@
 /node_modules
 /yarn-error.log
 
-.byebug_history
-
-.env.staging
-.env.production
-
 .DS_Store
-
 .vscode
-.irb_history
+

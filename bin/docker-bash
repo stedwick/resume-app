@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-# Handle both bash and running a command directly
-if [ -n "$*" ]; then
-  docker-compose run --rm app bash -l -c "$*"
-else
-  docker-compose run --rm app bash -l
-fi
