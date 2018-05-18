@@ -369,7 +369,7 @@ interest ||= philip.interests.build
 interest.update({
   name: "My YouTube Channel",
   link: "https://www.youtube.com/watch?v=YQtbcgBWobA",
-  icon: "youtube",
+  icon: "youtube.png",
   blurb: "At over 1 million views, my Yoshimoto Cube video is my 15 minutes of fame.",
   order: i
 })
@@ -380,7 +380,7 @@ interest ||= philip.interests.build
 interest.update({
   name: "US Chess Federation",
   link: "http://www.uschess.org/msa/MbrDtlMain.php?14448371",
-  icon: "chess",
+  icon: "chess.png",
   blurb: "Rated 1618 USCF and 2000-ish on [Lichess](https://lichess.org/@/PhilChessPDX), I'm always looking to improve.",
   order: i
 })
@@ -391,7 +391,7 @@ interest ||= philip.interests.build
 interest.update({
   name: "MIT Sailing Club",
   link: "http://sailing.mit.edu",
-  icon: "sailing",
+  icon: "sailing.png",
   blurb: "I'm a lifetime member. If we are in Boston, I'll take you out on the Charles.",
   order: i
 })
@@ -402,7 +402,7 @@ interest ||= philip.interests.build
 interest.update({
   name: "Toast the Dog!",
   link: "https://www.instagram.com/toastwiththemost/",
-  icon: "toast",
+  icon: "toast.png",
   blurb: "Such a good dog, but he sometimes sits onkjf ssadkl",
   order: i
 })
