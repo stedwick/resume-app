@@ -32,6 +32,8 @@ philip.update({
   profile_pic: "philip-sq.jpg",
   background_img: "my-name-is-phil.jpg"
 })
+philip.save
+philip.reload
 
 # Skills
 i=0
