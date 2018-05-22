@@ -56,8 +56,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 
   # Better console
-  gem "pry-rails"
-  gem "bond" # better IRB completion
+  # gem "pry-rails"
+  # gem "bond" # better IRB completion
 
   # Better errors
   gem "better_errors"
