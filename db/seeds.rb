@@ -11,7 +11,7 @@ philip = Person.find_by name: "Philip Brocoum"
 philip ||= Person.new
 philip.update({
   name: "Philip Brocoum",
-  about: "Ruby on Rails developer and DevOps engineer",
+  about: "DevOps engineer and full-stack Ruby on Rails developer",
   location: "Portland, OR",
   github: "https://github.com/stedwick",
   linkedin: "https://www.linkedin.com/in/philipbrocoum",
@@ -19,14 +19,14 @@ philip.update({
   twitter: "https://twitter.com/stedwick",
   career_blurb: "<div class='col-12 col-lg-6'><p>I started developing for the web in 2008. I now have a decade of experience working with large apps, and I'm familiar with the newest and most popular technologies.</p></div>
   
-  <div class='col-12 col-lg-6'><p>This site you're reading is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com), [Let's Encrypt](https://letsencrypt.org/), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). View the source on [GitHub](https://github.com/stedwick/resume).</p></div>",
+  <div class='col-12 col-lg-6'><p>This site you're reading is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com) & [Kubernetes](https://kubernetes.io), [Let's Encrypt](https://letsencrypt.org/), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). View the source on [GitLab](https://gitlab.com/users/stedwick/projects).</p></div>",
   # skills_blurb: "",
   education_blurb: "I'm a mathematician by education, and my first job was as a math teacher in New York City. Mathematics and programming are closely related, and I quickly took to my new career as a Ruby developer.",
   work_blurb: "This is a gallery of the Rails sites that I've worked on professionally.",
   projects_blurb: "I've been a full-stack Ruby on Rails web developer since 2008. I have nearly a decade of experience working with large web applications running on Ruby on Rails, MySQL, Amazon AWS, Linux, git, Chef, and more. This is a gallery of the Rails sites that I've worked on professionally.",
   old_blurb: "I work with all the current tools and platforms for Ruby on Rails web development. I'm constantly trying out the cutting-edge as well, such as Docker.",
   personal_blurb: "I maintain a healthy work/life balance. If you would like to learn more about me beyond my Ruby professional life, check out the links below!",
-  contact_blurb: "<span class=\"dropcaps d-none d-md-inline\">H</span><span class=\"dropcaps dcsm d-md-none\">H</span>i there! If you've made it this far, drop me a line. I'm looking for a _**full-time remote**_ position, in either Ruby on Rails or DevOps. I have 8 years of experience working remotely: I work M-F 9-5 from my home office and I'm always available on Slack or chat, and for pair programming and video calls. I'm also happy to travel onsite on a regular schedule or as needed. Send me an email, let me know what your company is working on, and I'll speak with you soon.",
+  contact_blurb: "<span class=\"dropcaps d-none d-md-inline\">H</span><span class=\"dropcaps dcsm d-md-none\">H</span>i there! If you've made it this far, drop me a line. I'm looking for a _**full-time remote**_ position, in either DevOps or Ruby on Rails. I have 8 years of experience working remotely: I work M-F 9-5 from my home office and I'm always available on Slack or chat, and for pair programming and video calls. I'm also happy to travel onsite on a regular schedule or as needed. Send me an email, let me know what your company is working on, and I'll speak with you soon &#x1f44d;.",
   phone: "1 (347) 701-0252",
   email: "philip.brocoum@gmail.com",
   profile_pic: "philip-sq.jpg",
@@ -43,7 +43,7 @@ skill.update({
   name: "Ruby on Rails",
   link: "http://rubyonrails.org",
   icon: "ruby.png",
-  description: "Backend development with Rails 2, 3, 4, and 5",
+  description: "App development with Rails 2, 3, 4, and 5",
   blurb: nil,
   dates: nil,
   image: nil,
@@ -101,9 +101,31 @@ skill.update({
   name: "Docker",
   link: "https://www.docker.com",
   icon: "docker.png",
-  description: "Containerized deployment with Docker, Docker Compose, and Docker Machine",
+  description: "Containerize all the things!",
   order: i
 })
+
+i+=1
+skill = philip.skills.find_by name: "Kubernetes"
+skill ||= philip.skills.build
+skill.update({
+  name: "Kubernetes",
+  link: "https://kubernetes.io",
+  icon: "kubernetes.png",
+  description: "Container orchestration and scaling",
+  order: i
+})
+
+# i+=1
+# skill = philip.skills.find_by name: "Vagrant"
+# skill ||= philip.skills.build
+# skill.update({
+  # name: "Vagrant",
+  # link: "https://www.vagrantup.com/",
+  # icon: "vagrant.png",
+  # description: "Keeping dev and production parity",
+  # order: i
+# })
 
 i+=1
 skill = philip.skills.find_by name: "Chef"
@@ -135,17 +157,6 @@ skill.update({
   link: "https://github.com/stedwick",
   icon: "git.png",
   description: "git-flow is my preferred branching model",
-  order: i
-})
-
-i+=1
-skill = philip.skills.find_by name: "Vagrant"
-skill ||= philip.skills.build
-skill.update({
-  name: "Vagrant",
-  link: "https://www.vagrantup.com/",
-  icon: "vagrant.png",
-  description: "Keeping dev and production parity",
   order: i
 })
 
