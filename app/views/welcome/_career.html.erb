@@ -1,11 +1,11 @@
 <div class="<%= cycle "bg-light", "bg-white" %>">
   <div class="container pt-3 pb-2" id="career">
     <div class="row pt-3">
-      <div class="col">
+      <div class="col-12">
         <h2 class="text-center">My Career</h2>
         <hr class="pb-1" />
-        <%= markdown @person.work_blurb %>
       </div>
+      <%= markdown @person.work_blurb %>
     </div>
   </div>
 </div>
