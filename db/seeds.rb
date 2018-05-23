@@ -17,7 +17,7 @@ philip.update({
   linkedin: "https://www.linkedin.com/in/philipbrocoum",
   facebook: "https://www.facebook.com/philip.brocoum",
   twitter: "https://twitter.com/stedwick",
-  career_blurb: "<div class='col-12 col-lg-6'><p>Hello! I'm Philip, and I started developing for the web at a startup in NYC in 2007. Fast-forward ten years and I now have a decade of experience working with large apps running on the best and most popular technologies.</p></div>
+  career_blurb: "<div class='col-12 col-lg-6'><p>Hello! I'm Philip, and I started developing for the web at a startup in NYC in 2007. Fast-forward ten years and I'm now in Portland with a decade of experience working on large apps using the best and most popular technologies.</p></div>
   
   <div class='col-12 col-lg-6'><p>This site you're reading now is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com) & [Kubernetes](https://kubernetes.io), [Let's Encrypt](https://letsencrypt.org/), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). You can view the source on [GitLab](https://gitlab.com/users/stedwick/projects).</p></div>",
   # skills_blurb: "",
@@ -236,7 +236,7 @@ site.update({
   link: "https://web.archive.org/web/20110811204633/http://www.readmedia.com:80/",
   icon: "readmedia.png",
   description: "Ruby on Rails developer",
-  blurb: "readMedia sends press releases to newspapers via mail merge for its clients all over the country. I upgraded the existing Rails 2 app to Rails 3, helped move it onto AWS, and was one of three developers working full-time on the app for many years.",
+  blurb: "readMedia sends press releases to newspapers via mail merge for its clients all over the country. I upgraded the readMedia.com Rails 2 app to Rails 3, helped move it onto AWS, and was one of three developers working full-time on the app for many years.",
   dates: "2008 &ndash; 2012",
   location: "New York, NY",
   image: "readmedia-site.jpg",
