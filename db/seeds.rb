@@ -17,7 +17,7 @@ philip.update({
   linkedin: "https://www.linkedin.com/in/philipbrocoum",
   facebook: "https://www.facebook.com/philip.brocoum",
   twitter: "https://twitter.com/stedwick",
-  career_blurb: "<div class='col-12 col-lg-6'><p>Hello! I'm Philip, and I started developing for the web at a startup in NYC in 2007. Fast-forward ten years and I'm now in Portland with a decade of experience working on large apps using the best and most popular technologies.</p></div>
+  career_blurb: "<div class='col-12 col-lg-6'><p>Hello! I'm Philip, and I started developing for the web at a startup in NYC in 2007. Fast-forward ten years and here I am in Portland with a decade of experience working on large apps using the best and most popular technologies.</p></div>
   
   <div class='col-12 col-lg-6'><p>This site you're reading now is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com) & [Kubernetes](https://kubernetes.io), [Let's Encrypt](https://letsencrypt.org/), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). You can view the source on [GitLab](https://gitlab.com/users/stedwick/projects).</p></div>",
   # skills_blurb: "",
@@ -25,7 +25,7 @@ philip.update({
   work_blurb: "This is a gallery of the Rails sites that I've worked on professionally.",
   projects_blurb: "I've been a full-stack Ruby on Rails web developer since 2008. I have nearly a decade of experience working with large web applications running on Ruby on Rails, MySQL, Amazon AWS, Linux, git, Chef, and more. This is a gallery of the Rails sites that I've worked on professionally.",
   old_blurb: "I work with all the current tools and platforms for Ruby on Rails web development. I'm constantly trying out the cutting-edge as well, such as Docker.",
-  personal_blurb: "I maintain a healthy work/life balance. If you would like to learn more about me beyond my Ruby professional life, check out the links below!",
+  personal_blurb: "I maintain a healthy work/life balance. If you'd like to learn more about me beyond my professional life, check out the links below!",
   contact_blurb: "<span class=\"dropcaps d-none d-md-inline\">H</span><span class=\"dropcaps dcsm d-md-none\">H</span>i there! If you've made it this far, drop me a line. I'm looking for a _**full-time remote**_ position, in either DevOps or Ruby on Rails. I have 8 years of experience working remotely: I work M-F 9-5 from my home office and I'm always available on Slack or chat, and for pair programming and video calls. I'm also happy to travel onsite on a regular schedule or as needed. Send me an email, let me know what your company is working on, and I'll speak with you soon &#x1f44d;.",
   phone: "1 (347) 701-0252",
   email: "philip.brocoum@gmail.com",
@@ -383,7 +383,7 @@ interest.update({
   name: "My YouTube Channel",
   link: "https://www.youtube.com/watch?v=YQtbcgBWobA",
   icon: "youtube.png",
-  blurb: "At over 1 million views, my Yoshimoto Cube video is my 15 minutes of fame.",
+  blurb: "With 1 million views, my Yoshimoto Cube video is my 15 minutes of fame.",
   order: i
 })
 
@@ -405,7 +405,7 @@ interest.update({
   name: "MIT Sailing Club",
   link: "http://sailing.mit.edu",
   icon: "sailing.png",
-  blurb: "I'm a lifetime member. If we are in Boston, I'll take you out on the Charles.",
+  blurb: "I'm a lifetime member. If we're ever in Boston, I'll take you out on the Charles.",
   order: i
 })
 
