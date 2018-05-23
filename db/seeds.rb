@@ -17,9 +17,9 @@ philip.update({
   linkedin: "https://www.linkedin.com/in/philipbrocoum",
   facebook: "https://www.facebook.com/philip.brocoum",
   twitter: "https://twitter.com/stedwick",
-  career_blurb: "<div class='col-12 col-lg-6'><p>I started developing for the web in 2008. I now have a decade of experience working with large apps, and I'm familiar with the newest and most popular technologies.</p></div>
+  career_blurb: "<div class='col-12 col-lg-6'><p>Hello! I'm Philip, and I started developing for the web at a startup in NYC in 2007. Fast-forward ten years and I now have a decade of experience working with large apps running on the best and most popular technologies.</p></div>
   
-  <div class='col-12 col-lg-6'><p>This site you're reading is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com) & [Kubernetes](https://kubernetes.io), [Let's Encrypt](https://letsencrypt.org/), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). View the source on [GitLab](https://gitlab.com/users/stedwick/projects).</p></div>",
+  <div class='col-12 col-lg-6'><p>This site you're reading now is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com) & [Kubernetes](https://kubernetes.io), [Let's Encrypt](https://letsencrypt.org/), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). You can view the source on [GitLab](https://gitlab.com/users/stedwick/projects).</p></div>",
   # skills_blurb: "",
   education_blurb: "I'm a mathematician by education, and my first job was as a math teacher in New York City. Mathematics and programming are closely related, and I quickly took to my new career as a Ruby developer.",
   work_blurb: "This is a gallery of the Rails sites that I've worked on professionally.",
@@ -62,13 +62,24 @@ skill.update({
 })
 
 i+=1
-skill = philip.skills.find_by name: "MySQL/PostgreSQL"
+skill = philip.skills.find_by name: "Docker"
 skill ||= philip.skills.build
 skill.update({
-  name: "MySQL/PostgreSQL",
-  link: "https://www.mysql.com/",
-  icon: "mysql.png",
-  description: "DB administration of MySQL & PostgreSQL",
+  name: "Docker",
+  link: "https://www.docker.com",
+  icon: "docker.png",
+  description: "Containerize all the things!",
+  order: i
+})
+
+i+=1
+skill = philip.skills.find_by name: "Kubernetes"
+skill ||= philip.skills.build
+skill.update({
+  name: "Kubernetes",
+  link: "https://kubernetes.io",
+  icon: "kubernetes.png",
+  description: "Container orchestration and scaling",
   order: i
 })
 
@@ -95,24 +106,13 @@ skill.update({
 })
 
 i+=1
-skill = philip.skills.find_by name: "Docker"
+skill = philip.skills.find_by name: "MySQL/PostgreSQL"
 skill ||= philip.skills.build
 skill.update({
-  name: "Docker",
-  link: "https://www.docker.com",
-  icon: "docker.png",
-  description: "Containerize all the things!",
-  order: i
-})
-
-i+=1
-skill = philip.skills.find_by name: "Kubernetes"
-skill ||= philip.skills.build
-skill.update({
-  name: "Kubernetes",
-  link: "https://kubernetes.io",
-  icon: "kubernetes.png",
-  description: "Container orchestration and scaling",
+  name: "MySQL/PostgreSQL",
+  link: "https://www.mysql.com/",
+  icon: "mysql.png",
+  description: "DB administration of MySQL & PostgreSQL",
   order: i
 })
 
@@ -191,8 +191,8 @@ site.update({
   link: "http://www.meritpages.com/",
   icon: "merit.png",
   description: "Ruby on Rails engineer",
-  blurb: "Meritpages.com is the largest Rails app I've ever worked on, comprising eight Rails apps deployed in a services architecture on AWS.",
-  dates: "2013 &ndash; 2016",
+  blurb: "Merit showcases student achievements at hundreds of colleges and universities. Meritpages.com is the largest Rails app I've ever worked on, comprising eight Rails apps deployed in a services architecture on an AWS Ubuntu Linux cluster.",
+  dates: "2014 &ndash; 2016",
   location: "New York, NY",
   image: "merit-site.jpg",
   order: i
@@ -206,7 +206,7 @@ site.update({
   link: "http://www.gogreenride.com",
   icon: "gogreenride.png",
   description: "Ruby on Rails consultant",
-  blurb: "GoGreenRide.com is a ride-sharing backend similar to Uber, deployed on Rackspace using Passenger.",
+  blurb: "Go Green Ride is an eco-friendly ridesharing alternative to Uber. GoGreenRide.com and its accompanying iOS and Android apps use a Rails backend that heavily utilizes geolocation services and is deployed on Rackspace using Phusion Passenger.",
   dates: "2013",
   location: "Bayonne, NJ",
   image: "gogreenride-site.jpg",
@@ -221,8 +221,8 @@ site.update({
   link: "http://web.archive.org/web/20130601003317/http://readabout.me/",
   icon: "readaboutme.png",
   description: "Ruby on Rails engineer",
-  blurb: "readabout.me was the predecessor to Meritpages.com, deployed on Heroku.",
-  dates: "2012 &ndash; 2013",
+  blurb: "readabout.me was the predecessor to Merit, focusing primarily on students. The Rails app was deployed on Heroku initially, but with its success we quickly outgrew Heroku and switched to AWS.",
+  dates: "2012 &ndash; 2014",
   location: "New York, NY",
   image: "readaboutme-site.jpg",
   order: i
@@ -236,8 +236,8 @@ site.update({
   link: "https://web.archive.org/web/20110811204633/http://www.readmedia.com:80/",
   icon: "readmedia.png",
   description: "Ruby on Rails developer",
-  blurb: "readMedia sends press releases via mail merge for their clients. I upgraded the existing Rails 2 app to Rails 3, and was one of three developers working full-time on the app for many years.",
-  dates: "2008 &ndash; 2013",
+  blurb: "readMedia sends press releases to newspapers via mail merge for its clients all over the country. I upgraded the existing Rails 2 app to Rails 3, helped move it onto AWS, and was one of three developers working full-time on the app for many years.",
+  dates: "2008 &ndash; 2012",
   location: "New York, NY",
   image: "readmedia-site.jpg",
   order: i
@@ -251,7 +251,7 @@ site.update({
   link: "http://www.brightidea.com",
   icon: "brightidea.png",
   description: "Analyst",
-  blurb: "Brightidea provides online innovation management software. As one of their early employees, I helped with sales, onboarding, consulting, traveling, and running their software.",
+  blurb: "Brightidea provides innovation management software-as-a-service. As one of their early employees, I helped with sales, onboarding, consulting, traveling, and running their software.",
   dates: "2007 &ndash; 2008",
   location: "New York, NY",
   image: "brightidea-site.jpg",
