@@ -148,4 +148,10 @@ div.bg-dark {
       height: 1.5em;
     }
   }
+  &.for_hire {
+    .not_for_hire { display: none; }
+  }
+  &.not_for_hire {
+    .for_hire { display: none; }
+  }
 }

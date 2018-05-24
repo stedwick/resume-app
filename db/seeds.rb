@@ -28,11 +28,12 @@ philip.update({
   projects_blurb: "I often program for fun, and you can browse my side projects on GitHub. I once wrote a Ruby script to nab myself tickets to The Daily Show, which was first-come-first-serve on its website at the time, and you never knew when tickets would become available.",
   old_blurb: "I work with all the current tools and platforms for Ruby on Rails web development. I'm constantly trying out the cutting-edge as well, such as Docker.",
   personal_blurb: "I maintain a healthy work/life balance. If you'd like to learn more about me beyond my professional life, check out the links below!",
-  contact_blurb: "<span class=\"dropcaps d-none d-md-inline\">H</span><span class=\"dropcaps dcsm d-md-none\">H</span>i there! If you've made it this far, drop me a line. I'm looking for a _**full-time remote**_ position, in either DevOps or Ruby on Rails. I have 8 years of experience working remotely: I work M-F 9-5 from my home office and I'm always available on Slack or chat, and for pair programming and video calls. I'm also happy to travel onsite on a regular schedule or as needed. Send me an email, let me know what your company is working on, and I'll speak with you soon &#x1f44d;.",
+  contact_blurb: "<span class=\"dropcaps d-none d-md-inline\">H</span><span class=\"dropcaps dcsm d-md-none\">H</span>i there! If you've made it this far, drop me a line. <span class=\"not_for_hire\">I'm always open to _**remote**_ opportunities in either DevOps or Ruby on Rails.</span><span class=\"for_hire\">I'm looking for a _**full-time remote**_ position, in either DevOps or Ruby on Rails.</span> I have 8 years of experience working remotely: I work M-F 9-5 from my home office and I'm always available on Slack or chat, and for pair programming and video calls. I'm also happy to travel onsite on a regular schedule or as needed. Send me an email, let me know what your company is working on, and I'll speak with you soon &#x1f44d;.",
   phone: "1 (347) 701-0252",
   email: "philip.brocoum@gmail.com",
   profile_pic: "philip-sq.jpg",
-  background_img: "my-name-is-phil.jpg"
+  background_img: "my-name-is-phil.jpg",
+  for_hire: false
 })
 philip.save
 philip.reload

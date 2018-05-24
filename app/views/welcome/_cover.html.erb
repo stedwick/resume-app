@@ -20,7 +20,7 @@
           <%= link_to_social "twitter", @person.twitter %>
         </p>
         <p class="mt-5">
-          <%= link_to "Hire Me", "javascript:document.getElementById(\"hire-me\").scrollIntoView(true);", class: "btn btn-lg btn-danger" %>
+          <%= link_to "#{@person.for_hire ? 'Hire' : 'Contact'} Me", "javascript:document.getElementById(\"hire-me\").scrollIntoView(true);", class: "btn btn-lg btn-#{@person.for_hire ? 'danger' : 'primary'}" %>
         </p>
       </div>
       <div class="w-100"></div>

@@ -9,7 +9,7 @@
 </div>
 
 <div class="bg-white text-dark">
-  <div class="container pt-3" id="contact">
+  <div class="container pt-3 <%= @person.for_hire ? "for_hire" : "not_for_hire" -%>" id="contact">
     <div class="row py-3 justify-content-around">
       <div class="col-12 col-xl-11 mb-3">
         <%= markdown @person.contact_blurb %>
