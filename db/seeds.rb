@@ -32,8 +32,8 @@ philip.update({
   phone: "1 (347) 701-0252",
   email: "philip.brocoum@gmail.com",
   profile_pic: "philip-sq.jpg",
-  background_img: "my-name-is-phil.jpg",
-  for_hire: false
+  background_img: "my-name-is-phil.jpg"
+  # for_hire: false
 })
 philip.save
 philip.reload
