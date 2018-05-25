@@ -11,26 +11,29 @@ philip = Person.find_by name: "Philip Brocoum"
 philip ||= Person.new
 philip.update({
   name: "Philip Brocoum",
-  about: "Ruby on Rails developer and DevOps engineer",
+  about: "DevOps engineer and full-stack Ruby on Rails developer",
   location: "Portland, OR",
   github: "https://github.com/stedwick",
   linkedin: "https://www.linkedin.com/in/philipbrocoum",
   facebook: "https://www.facebook.com/philip.brocoum",
   twitter: "https://twitter.com/stedwick",
-  career_blurb: "<div class='col-12 col-lg-6'><p>I started developing for the web in 2008. I now have a decade of experience working with large apps, and I'm familiar with the newest and most popular technologies.</p></div>
+  career_blurb: "<div class='col-12 col-lg-6'><p>Hello! I'm Philip, and I started developing for the web at a startup in NYC in 2007. Fast-forward ten years and here I am in Portland with a decade of experience working on large apps using the best and most popular technologies.</p></div>
   
-  <div class='col-12 col-lg-6'><p>This site you're reading is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com), [Let's Encrypt](https://letsencrypt.org/), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). View the source on [GitHub](https://github.com/stedwick/resume).</p></div>",
+  <div class='col-12 col-lg-6'><p>This site you're reading now is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com) & [Kubernetes](https://kubernetes.io), [Let's Encrypt](https://letsencrypt.org/), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). You can view the source on [GitLab](https://gitlab.com/users/stedwick/projects).</p></div>",
   # skills_blurb: "",
-  education_blurb: "I'm a mathematician by education, and my first job was as a math teacher in New York City. Mathematics and programming are closely related, and I quickly took to my new career as a Ruby developer.",
-  work_blurb: "This is a gallery of the Rails sites that I've worked on professionally.",
-  projects_blurb: "I've been a full-stack Ruby on Rails web developer since 2008. I have nearly a decade of experience working with large web applications running on Ruby on Rails, MySQL, Amazon AWS, Linux, git, Chef, and more. This is a gallery of the Rails sites that I've worked on professionally.",
+  education_blurb: "I majored in mathematics in college and grad school, and my first career was as a teacher in New York City. However, I always loved computers and quickly transitioned to my new career as a developer.",
+  work_blurb: "<div class='col-12 col-lg-6'><p>I started in tech as an analyst at Brightidea back in 2007 when I was 25. At that time, I was transitioning away from mathematics and education. I taught myself Ruby on Rails and was hired a year later at readMedia as their first full-time developer. We grew the company and turned it into what Merit is today.</p></div>
+  
+  <div class='col-12 col-lg-6'><p>It was a startup environment, and I didn't just develop in Ruby &mdash; I did everything: DB & server administration and deployment, cloud scaling and automation, security, and project management. My passion has always been to build great products with great technologies.</p></div>",
+  projects_blurb: "I often program for fun, and you can browse my side projects on GitHub. I once wrote a Ruby script to nab myself tickets to The Daily Show, which was first-come-first-serve on its website at the time, and you never knew when tickets would become available.",
   old_blurb: "I work with all the current tools and platforms for Ruby on Rails web development. I'm constantly trying out the cutting-edge as well, such as Docker.",
-  personal_blurb: "I maintain a healthy work/life balance. If you would like to learn more about me beyond my Ruby professional life, check out the links below!",
-  contact_blurb: "<span class=\"dropcaps d-none d-md-inline\">H</span><span class=\"dropcaps dcsm d-md-none\">H</span>i there! If you've made it this far, drop me a line. I'm looking for a _**full-time remote**_ position, in either Ruby on Rails or DevOps. I have 8 years of experience working remotely: I work M-F 9-5 from my home office and I'm always available on Slack or chat, and for pair programming and video calls. I'm also happy to travel onsite on a regular schedule or as needed. Send me an email, let me know what your company is working on, and I'll speak with you soon.",
+  personal_blurb: "I maintain a healthy work/life balance. If you'd like to learn more about me beyond my professional life, check out the links below!",
+  contact_blurb: "<span class=\"dropcaps d-none d-md-inline\">H</span><span class=\"dropcaps dcsm d-md-none\">H</span>i there! If you've made it this far, drop me a line. <span class=\"not_for_hire\">I'm always open to _**remote**_ opportunities in either DevOps or Ruby on Rails.</span><span class=\"for_hire\">I'm looking for a _**full-time remote**_ position, in either DevOps or Ruby on Rails.</span> I have 8 years of experience working remotely: I work M-F 9-5 from my home office and I'm always available on Slack or chat, and for pair programming and video calls. I'm also happy to travel onsite on a regular schedule or as needed. Send me an email, let me know what your company is working on, and I'll speak with you soon &#x1f44d;.",
   phone: "1 (347) 701-0252",
   email: "philip.brocoum@gmail.com",
   profile_pic: "philip-sq.jpg",
   background_img: "my-name-is-phil.jpg"
+  # for_hire: false
 })
 philip.save
 philip.reload
@@ -43,7 +46,7 @@ skill.update({
   name: "Ruby on Rails",
   link: "http://rubyonrails.org",
   icon: "ruby.png",
-  description: "Backend development with Rails 2, 3, 4, and 5",
+  description: "App development with Rails 2, 3, 4, and 5",
   blurb: nil,
   dates: nil,
   image: nil,
@@ -62,13 +65,24 @@ skill.update({
 })
 
 i+=1
-skill = philip.skills.find_by name: "MySQL/PostgreSQL"
+skill = philip.skills.find_by name: "Docker"
 skill ||= philip.skills.build
 skill.update({
-  name: "MySQL/PostgreSQL",
-  link: "https://www.mysql.com/",
-  icon: "mysql.png",
-  description: "DB administration of MySQL & PostgreSQL",
+  name: "Docker",
+  link: "https://www.docker.com",
+  icon: "docker.png",
+  description: "Containerize all the things!",
+  order: i
+})
+
+i+=1
+skill = philip.skills.find_by name: "Kubernetes"
+skill ||= philip.skills.build
+skill.update({
+  name: "Kubernetes",
+  link: "https://kubernetes.io",
+  icon: "kubernetes.png",
+  description: "Container orchestration and scaling",
   order: i
 })
 
@@ -95,15 +109,26 @@ skill.update({
 })
 
 i+=1
-skill = philip.skills.find_by name: "Docker"
+skill = philip.skills.find_by name: "MySQL/PostgreSQL"
 skill ||= philip.skills.build
 skill.update({
-  name: "Docker",
-  link: "https://www.docker.com",
-  icon: "docker.png",
-  description: "Containerized deployment with Docker, Docker Compose, and Docker Machine",
+  name: "MySQL/PostgreSQL",
+  link: "https://www.mysql.com/",
+  icon: "mysql.png",
+  description: "DB administration of MySQL & PostgreSQL",
   order: i
 })
+
+# i+=1
+# skill = philip.skills.find_by name: "Vagrant"
+# skill ||= philip.skills.build
+# skill.update({
+  # name: "Vagrant",
+  # link: "https://www.vagrantup.com/",
+  # icon: "vagrant.png",
+  # description: "Keeping dev and production parity",
+  # order: i
+# })
 
 i+=1
 skill = philip.skills.find_by name: "Chef"
@@ -139,17 +164,6 @@ skill.update({
 })
 
 i+=1
-skill = philip.skills.find_by name: "Vagrant"
-skill ||= philip.skills.build
-skill.update({
-  name: "Vagrant",
-  link: "https://www.vagrantup.com/",
-  icon: "vagrant.png",
-  description: "Keeping dev and production parity",
-  order: i
-})
-
-i+=1
 skill = philip.skills.find_by name: "Photoshop"
 skill ||= philip.skills.build
 skill.update({
@@ -180,8 +194,8 @@ site.update({
   link: "http://www.meritpages.com/",
   icon: "merit.png",
   description: "Ruby on Rails engineer",
-  blurb: "Meritpages.com is the largest Rails app I've ever worked on, comprising eight Rails apps deployed in a services architecture on AWS.",
-  dates: "2013 &ndash; 2016",
+  blurb: "Merit showcases student achievements at hundreds of colleges and universities. Meritpages.com is the largest Rails app I've ever worked on, comprising eight Rails apps deployed in a services architecture on an AWS Ubuntu Linux cluster.",
+  dates: "2014 &ndash; 2016",
   location: "New York, NY",
   image: "merit-site.jpg",
   order: i
@@ -195,7 +209,7 @@ site.update({
   link: "http://www.gogreenride.com",
   icon: "gogreenride.png",
   description: "Ruby on Rails consultant",
-  blurb: "GoGreenRide.com is a ride-sharing backend similar to Uber, deployed on Rackspace using Passenger.",
+  blurb: "Go Green Ride is an eco-friendly ridesharing alternative to Uber. GoGreenRide.com and its accompanying iOS and Android apps use a Rails backend that heavily utilizes geolocation services and is deployed on Rackspace using Phusion Passenger.",
   dates: "2013",
   location: "Bayonne, NJ",
   image: "gogreenride-site.jpg",
@@ -210,8 +224,8 @@ site.update({
   link: "http://web.archive.org/web/20130601003317/http://readabout.me/",
   icon: "readaboutme.png",
   description: "Ruby on Rails engineer",
-  blurb: "readabout.me was the predecessor to Meritpages.com, deployed on Heroku.",
-  dates: "2012 &ndash; 2013",
+  blurb: "readabout.me was the predecessor to Merit, focusing primarily on students. The Rails app was deployed on Heroku initially, but with its success we quickly outgrew Heroku and switched to AWS.",
+  dates: "2012 &ndash; 2014",
   location: "New York, NY",
   image: "readaboutme-site.jpg",
   order: i
@@ -225,8 +239,8 @@ site.update({
   link: "https://web.archive.org/web/20110811204633/http://www.readmedia.com:80/",
   icon: "readmedia.png",
   description: "Ruby on Rails developer",
-  blurb: "readMedia sends press releases via mail merge for their clients. I upgraded the existing Rails 2 app to Rails 3, and was one of three developers working full-time on the app for many years.",
-  dates: "2008 &ndash; 2013",
+  blurb: "readMedia sends press releases to newspapers via mail merge for its clients all over the country. I upgraded the readMedia.com Rails 2 app to Rails 3, helped move it onto AWS, and was one of three developers working full-time on the app for many years.",
+  dates: "2008 &ndash; 2012",
   location: "New York, NY",
   image: "readmedia-site.jpg",
   order: i
@@ -240,7 +254,7 @@ site.update({
   link: "http://www.brightidea.com",
   icon: "brightidea.png",
   description: "Analyst",
-  blurb: "Brightidea provides online innovation management software. As one of their early employees, I helped with sales, onboarding, consulting, traveling, and running their software.",
+  blurb: "Brightidea provides innovation management software-as-a-service. As one of their early employees, I helped with sales, onboarding, consulting, traveling, and running their software.",
   dates: "2007 &ndash; 2008",
   location: "New York, NY",
   image: "brightidea-site.jpg",
@@ -345,7 +359,7 @@ school.update({
   location: "New York, NY",
   dates: "class of 2006",
   description: "M.A. in Math Education",
-  blurb: "I attended NYU through [Math for America](https://www.mathforamerica.org) where I expanded my theoretical knowledge of mathematics with practical knowledge of teaching.",
+  blurb: "I attended NYU through [Math for America](https://www.mathforamerica.org) where I took my theoretical knowledge of mathematics and added practical knowledge of teaching.",
   order: i
 })
 
@@ -360,7 +374,7 @@ job.update({
   description: "Math Teacher",
   location: "New York, NY",
   dates: "2006 &ndash; 2007",
-  blurb: "After getting my Master's degree, I taught 6&ndash;8th grade math from 2006 &ndash; 2007 at the [Shuang Wen School (P.S. 184)](http://www.ps184m.org) in Chinatown.",
+  blurb: "After getting my Master's degree, I taught 6&ndash;8th grade math at the [Shuang Wen School (P.S. 184)](http://www.ps184m.org) in Chinatown.",
   order: i
 })
 
@@ -372,7 +386,7 @@ interest.update({
   name: "My YouTube Channel",
   link: "https://www.youtube.com/watch?v=YQtbcgBWobA",
   icon: "youtube.png",
-  blurb: "At over 1 million views, my Yoshimoto Cube video is my 15 minutes of fame.",
+  blurb: "With 1 million views, my Yoshimoto Cube video is my 15 minutes of fame.",
   order: i
 })
 
@@ -394,7 +408,7 @@ interest.update({
   name: "MIT Sailing Club",
   link: "http://sailing.mit.edu",
   icon: "sailing.png",
-  blurb: "I'm a lifetime member. If we are in Boston, I'll take you out on the Charles.",
+  blurb: "I'm a lifetime member. If we're ever in Boston, I'll take you out on the Charles.",
   order: i
 })
 

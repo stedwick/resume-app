@@ -16,6 +16,8 @@
 /node_modules
 /yarn-error.log
 
+.irb_history
+
 .DS_Store
 .vscode
 

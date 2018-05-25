@@ -9,3 +9,5 @@ end
 
 Pry.config.pager = false
 
+Pry.config.history.file = "/rails/.irb_history" if Rails.env == "development"
+
