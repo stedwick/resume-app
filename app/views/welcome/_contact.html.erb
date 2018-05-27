@@ -31,6 +31,9 @@
             <%= svg_icon "email" %> <%= link_to @person.email, "mailto:#{@person.email}" %>
           </li>
           <li class="list-group-item text-truncate">
+            <%= svg_icon "stackoverflow" %> <%= link_to @person.stackoverflow, @person.stackoverflow %>
+          </li>
+          <li class="list-group-item text-truncate">
             <%= svg_icon "linkedin" %> <%= link_to @person.linkedin, @person.linkedin %>
           </li>
           <li class="list-group-item">

@@ -14,10 +14,11 @@
         <p class="lead"><%= @person.about %></p>
         <p class="mb-4"><%= @person.location %></p>
         <p class="icons">
-          <%= link_to_social "github", @person.github %>
-          <%= link_to_social "linkedin", @person.linkedin %>
-          <%= link_to_social "facebook", @person.facebook %>
-          <%= link_to_social "twitter", @person.twitter %>
+          <%= link_to_social "github", @person.github, {title: "GitHub"} %>
+          <!-- <%= link_to_social "linkedin", @person.linkedin, {title: "LinkedIn"} %> -->
+          <%= link_to_social "stackoverflow", @person.stackoverflow, {title: "Stack Overflow"} %>
+          <%= link_to_social "facebook", @person.facebook, {title: "Facebook"} %>
+          <%= link_to_social "twitter", @person.twitter, {title: "Twitter"} %>
         </p>
         <p class="mt-5">
           <%= link_to "#{@person.for_hire ? 'Hire' : 'Contact'} Me", "javascript:document.getElementById(\"hire-me\").scrollIntoView(true);", class: "btn btn-lg btn-#{@person.for_hire ? 'danger' : 'info'}" %>

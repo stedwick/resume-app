@@ -15,6 +15,7 @@ philip.update({
   location: "Portland, OR",
   github: "https://github.com/stedwick",
   linkedin: "https://www.linkedin.com/in/philipbrocoum",
+  stackoverflow: "https://stackoverflow.com/story/philipbrocoum",
   facebook: "https://www.facebook.com/philip.brocoum",
   twitter: "https://twitter.com/stedwick",
   career_blurb: "<div class='col-12 col-lg-6'><p>Hello! I'm Philip, and I started developing for the web at a startup in NYC in 2007. Fast-forward ten years and here I am in Portland with a decade of experience working on large apps using the best and most popular technologies.</p></div>
