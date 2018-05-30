@@ -15,6 +15,7 @@ philip.update({
   location: "Portland, OR",
   github: "https://github.com/stedwick",
   linkedin: "https://www.linkedin.com/in/philipbrocoum",
+  stackoverflow: "https://stackoverflow.com/story/philipbrocoum",
   facebook: "https://www.facebook.com/philip.brocoum",
   twitter: "https://twitter.com/stedwick",
   career_blurb: "<div class='col-12 col-lg-6'><p>Hello! I'm Philip, and I started developing for the web at a startup in NYC in 2007. Fast-forward ten years and here I am in Portland with a decade of experience working on large apps using the best and most popular technologies.</p></div>
@@ -25,7 +26,7 @@ philip.update({
   work_blurb: "<div class='col-12 col-lg-6'><p>I started in tech as an analyst at Brightidea back in 2007 when I was 25. At that time, I was transitioning away from mathematics and education. I taught myself Ruby on Rails and was hired a year later at readMedia as their first full-time developer. We grew the company and turned it into what Merit is today.</p></div>
   
   <div class='col-12 col-lg-6'><p>It was a startup environment, and I didn't just develop in Ruby &mdash; I did everything: DB & server administration and deployment, cloud scaling and automation, security, and project management. My passion has always been to build great products with great technologies.</p></div>",
-  projects_blurb: "I often program for fun, and you can browse my side projects on GitHub. I once wrote a Ruby script to nab myself tickets to The Daily Show, which was first-come-first-serve on its website at the time, and you never knew when tickets would become available.",
+  projects_blurb: "<span class='projects_blurb'>I often program for fun, and you can browse my side projects on GitHub. I once [wrote a Ruby script](https://github.com/stedwick/scripting/blob/master/daily_tix.rb) to nab myself tickets to The Daily Show, which was first-come-first-serve on its website at the time, and you never knew when tickets would become available.</span>",
   old_blurb: "I work with all the current tools and platforms for Ruby on Rails web development. I'm constantly trying out the cutting-edge as well, such as Docker.",
   personal_blurb: "I maintain a healthy work/life balance. If you'd like to learn more about me beyond my professional life, check out the links below!",
   contact_blurb: "<span class=\"dropcaps d-none d-md-inline\">H</span><span class=\"dropcaps dcsm d-md-none\">H</span>i there! If you've made it this far, drop me a line. <span class=\"not_for_hire\">I'm always open to _**remote**_ opportunities in either DevOps or Ruby on Rails.</span><span class=\"for_hire\">I'm looking for a _**full-time remote**_ position, in either DevOps or Ruby on Rails.</span> I have 8 years of experience working remotely: I work M-F 9-5 from my home office and I'm always available on Slack or chat, and for pair programming and video calls. I'm also happy to travel onsite on a regular schedule or as needed. Send me an email, let me know what your company is working on, and I'll speak with you soon &#x1f44d;.",

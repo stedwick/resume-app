@@ -3,43 +3,64 @@
 person_1:
   id: 1
   name: Philip Brocoum
-  about: Full-stack Ruby on Rails developer
+  about: DevOps engineer and full-stack Ruby on Rails developer
   location: Portland, OR
   github: https://github.com/stedwick
   linkedin: https://www.linkedin.com/in/philipbrocoum
   facebook: https://www.facebook.com/philip.brocoum
   twitter: https://twitter.com/stedwick
-  career_blurb: |-
-    I started developing for the web in 2008. I now have a decade of experience working with large apps, and I'm familiar with the newest and most popular technologies.
-
-    This site you're reading is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). View the source on [GitHub](https://github.com/stedwick/resume).
-
-    My skills include:
-  skills_blurb: I work with all the current tools and platforms for Ruby on Rails
-    web development. I'm constantly trying out the cutting-edge as well, such as Docker.
-  education_blurb: I'm a mathematician by education, and my first job was as a math
-    teacher in New York City. Mathematics and programming are closely related, and
-    I quickly took to my new career as a Ruby developer.
-  work_blurb: This is a gallery of the Rails sites that I've worked on professionally.
-  projects_blurb: This is a gallery of the Rails sites that I've worked on professionally.
+  career_blurb: "<div class='col-12 col-lg-6'><p>Hello! I'm Philip, and I started
+    developing for the web at a startup in NYC in 2007. Fast-forward ten years and
+    here I am in Portland with a decade of experience working on large apps using
+    the best and most popular technologies.</p></div>\n  \n  <div class='col-12 col-lg-6'><p>This
+    site you're reading now is made with [Rails 5](http://rubyonrails.org), [Bootstrap
+    4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's
+    deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com)
+    & [Kubernetes](https://kubernetes.io), [Let's Encrypt](https://letsencrypt.org/),
+    [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io).
+    You can view the source on [GitLab](https://gitlab.com/users/stedwick/projects).</p></div>"
+  skills_blurb: 
+  education_blurb: I majored in mathematics in college and grad school, and my first
+    career was as a teacher in New York City. However, I always loved computers and
+    quickly transitioned to my new career as a developer.
+  work_blurb: "<div class='col-12 col-lg-6'><p>I started in tech as an analyst at
+    Brightidea back in 2007 when I was 25. At that time, I was transitioning away
+    from mathematics and education. I taught myself Ruby on Rails and was hired a
+    year later at readMedia as their first full-time developer. We grew the company
+    and turned it into what Merit is today.</p></div>\n  \n  <div class='col-12 col-lg-6'><p>It
+    was a startup environment, and I didn't just develop in Ruby &mdash; I did everything:
+    DB & server administration and deployment, cloud scaling and automation, security,
+    and project management. My passion has always been to build great products with
+    great technologies.</p></div>"
+  projects_blurb: "<span class='projects_blurb'>I often program for fun, and you can
+    browse my side projects on GitHub. I once [wrote a Ruby script](https://github.com/stedwick/scripting/blob/master/daily_tix.rb)
+    to nab myself tickets to The Daily Show, which was first-come-first-serve on its
+    website at the time, and you never knew when tickets would become available.</span>"
   old_blurb: I work with all the current tools and platforms for Ruby on Rails web
     development. I'm constantly trying out the cutting-edge as well, such as Docker.
-  personal_blurb: I maintain a healthy work/life balance. If you would like to learn
-    more about me as a person, beyond my Ruby professional life, check out the links
-    below!
-  contact_blurb: Are you looking for a full-time Senior Ruby on Rails Developer or
-    Engineering Manager? I'm based in New York City, but I also have years of experience
-    working remotely. Drop me a line.
+  personal_blurb: I maintain a healthy work/life balance. If you'd like to learn more
+    about me beyond my professional life, check out the links below!
+  contact_blurb: '<span class="dropcaps d-none d-md-inline">H</span><span class="dropcaps
+    dcsm d-md-none">H</span>i there! If you''ve made it this far, drop me a line.
+    <span class="not_for_hire">I''m always open to _**remote**_ opportunities in either
+    DevOps or Ruby on Rails.</span><span class="for_hire">I''m looking for a _**full-time
+    remote**_ position, in either DevOps or Ruby on Rails.</span> I have 8 years of
+    experience working remotely: I work M-F 9-5 from my home office and I''m always
+    available on Slack or chat, and for pair programming and video calls. I''m also
+    happy to travel onsite on a regular schedule or as needed. Send me an email, let
+    me know what your company is working on, and I''ll speak with you soon &#x1f44d;.'
   phone: 1 (347) 701-0252
   email: philip.brocoum@gmail.com
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-13 18:37:20.952610000 Z
+    utc: &1 2018-05-18 01:13:37.885818000 Z
     zone: &2 !ruby/object:ActiveSupport::TimeZone
       name: Etc/UTC
     time: *1
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-13 18:37:20.952610000 Z
+    utc: &3 2018-05-30 18:50:00.000000000 Z
     zone: *2
     time: *3
   profile_pic: philip-sq.jpg
   background_img: my-name-is-phil.jpg
+  for_hire: false
+  stackoverflow: https://stackoverflow.com/story/philipbrocoum
