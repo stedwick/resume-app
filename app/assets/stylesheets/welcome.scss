@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+%light-dashed-underlined-link {
+  a {
+    color: $light;
+    border-bottom: 1px dashed $gray-600;
+    &:hover { border-bottom: none; }
+  }
+}
+
 #cover {
   background-position: center;
   background-size: cover;
@@ -95,10 +103,7 @@
 #education {
   .media-body {
     p {
-      a {
-        border-bottom: 1px dashed $gray-600;
-        &:hover { border-bottom: none; }
-      }
+      @extend %light-dashed-underlined-link;
     }
   }
   hr.section {
@@ -120,6 +125,12 @@
 div.bg-dark {
   hr.divider {
     border-color: $gray-500;
+  }
+}
+
+#projects {
+  span.projects_blurb {
+    @extend %light-dashed-underlined-link;
   }
 }
 
