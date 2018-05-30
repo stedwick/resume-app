@@ -1,12 +1,89 @@
 # # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+item_18:
+  id: 18
+  name: Sci-Fi Voter
+  link: https://scifi-voter.herokuapp.com
+  icon: 
+  image: 
+  description: Cast your vote
+  blurb: Sci-Fi Voter definitively answers the question, "What is the best Star Trek
+    episode?"
+  location: 
+  dates: 
+  person_id: 1
+  order: 0
+  type: Project
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.317575000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-18 01:13:38.317575000 Z
+    zone: *2
+    time: *3
+  svg: star-trek
+
+item_13:
+  id: 13
+  name: Merit
+  link: http://www.meritpages.com/
+  icon: merit.png
+  image: merit-site.jpg
+  description: Ruby on Rails engineer
+  blurb: Merit showcases student achievements at hundreds of colleges and universities.
+    Meritpages.com is the largest Rails app I've ever worked on, comprising eight
+    Rails apps deployed in a services architecture on an AWS Ubuntu Linux cluster.
+  location: New York, NY
+  dates: 2014 &ndash; 2016
+  person_id: 1
+  order: 0
+  type: Site
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.227883000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-30 16:20:39.340618000 Z
+    zone: *2
+    time: *3
+  svg: 
+
+item_23:
+  id: 23
+  name: Massachusetts Institute of Technology
+  link: http://web.mit.edu
+  icon: 
+  image: 
+  description: B.S. in Mathematics
+  blurb: 'I have two publications: ["Reflections in a Euclidean Space,"](http://ocw.mit.edu/courses/mathematics/18-06ci-linear-algebra-communications-intensive-spring-2004/projects/1806ciphil.pdf)
+    and ["Exploration of Reflection Holograms and Their Fringes With a Scanning Electron
+    Microscope."](https://www.scribd.com/document/17377101/Exploration-of-Reflection-Holograms-and-Their-Fringes-With-a-Scanning-Electron-Microscope)'
+  location: Cambridge, MA
+  dates: class of 2005
+  person_id: 1
+  order: 0
+  type: School
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.399570000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-18 01:13:38.399570000 Z
+    zone: *2
+    time: *3
+  svg: mit
+
 item_1:
   id: 1
   name: Ruby on Rails
   link: http://rubyonrails.org
   icon: ruby.png
   image: 
-  description: Backend development with Rails 2, 3, 4, and 5
+  description: App development with Rails 2, 3, 4, and 5
   blurb: 
   location: 
   dates: 
@@ -14,14 +91,140 @@ item_1:
   order: 0
   type: Skill
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:14:24.599673000 Z
+    utc: &1 2018-05-18 01:13:38.026488000 Z
     zone: &2 !ruby/object:ActiveSupport::TimeZone
       name: Etc/UTC
     time: *1
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:14:24.599673000 Z
+    utc: &3 2018-05-30 16:20:39.199899000 Z
     zone: *2
     time: *3
+  svg: 
+
+item_25:
+  id: 25
+  name: NYC Department of Education
+  link: http://schools.nyc.gov
+  icon: 
+  image: 
+  description: Math Teacher
+  blurb: After getting my Master's degree, I taught 6&ndash;8th grade math at the
+    [Shuang Wen School (P.S. 184)](http://www.ps184m.org) in Chinatown.
+  location: New York, NY
+  dates: 2006 &ndash; 2007
+  person_id: 1
+  order: 0
+  type: Job
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.448906000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-30 16:20:39.545103000 Z
+    zone: *2
+    time: *3
+  svg: classroom
+
+item_26:
+  id: 26
+  name: My YouTube Channel
+  link: https://www.youtube.com/watch?v=YQtbcgBWobA
+  icon: youtube.png
+  image: 
+  description: 
+  blurb: With 1 million views, my Yoshimoto Cube video is my 15 minutes of fame.
+  location: 
+  dates: 
+  person_id: 1
+  order: 0
+  type: Interest
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.493180000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-30 16:20:39.579029000 Z
+    zone: *2
+    time: *3
+  svg: 
+
+item_24:
+  id: 24
+  name: New York University
+  link: https://www.nyu.edu
+  icon: 
+  image: 
+  description: M.A. in Math Education
+  blurb: I attended NYU through [Math for America](https://www.mathforamerica.org)
+    where I took my theoretical knowledge of mathematics and added practical knowledge
+    of teaching.
+  location: New York, NY
+  dates: class of 2006
+  person_id: 1
+  order: 1
+  type: School
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.411257000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-30 16:20:39.510383000 Z
+    zone: *2
+    time: *3
+  svg: nyu
+
+item_14:
+  id: 14
+  name: Go Green Ride
+  link: http://www.gogreenride.com
+  icon: gogreenride.png
+  image: gogreenride-site.jpg
+  description: Ruby on Rails consultant
+  blurb: Go Green Ride is an eco-friendly ridesharing alternative to Uber. GoGreenRide.com
+    and its accompanying iOS and Android apps use a Rails backend that heavily utilizes
+    geolocation services and is deployed on Rackspace using Phusion Passenger.
+  location: Bayonne, NJ
+  dates: '2013'
+  person_id: 1
+  order: 1
+  type: Site
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.240302000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-30 16:20:39.351198000 Z
+    zone: *2
+    time: *3
+  svg: 
+
+item_19:
+  id: 19
+  name: Munch
+  link: https://stedwick.github.io/munch/
+  icon: 
+  image: 
+  description: Test your wit
+  blurb: The game of Munch! Can you beat the computer? I doubt it...
+  location: 
+  dates: 
+  person_id: 1
+  order: 1
+  type: Project
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.328968000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-18 01:13:38.328968000 Z
+    zone: *2
+    time: *3
+  svg: cookie
 
 item_2:
   id: 2
@@ -37,22 +240,123 @@ item_2:
   order: 1
   type: Skill
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:14:24.610854000 Z
+    utc: &1 2018-05-18 01:13:38.041251000 Z
     zone: &2 !ruby/object:ActiveSupport::TimeZone
       name: Etc/UTC
     time: *1
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:14:24.610854000 Z
+    utc: &3 2018-05-18 01:13:38.041251000 Z
     zone: *2
     time: *3
+  svg: 
 
-item_3:
-  id: 3
-  name: MySQL/PostgreSQL
-  link: https://www.mysql.com/
-  icon: mysql.png
+item_27:
+  id: 27
+  name: US Chess Federation
+  link: http://www.uschess.org/msa/MbrDtlMain.php?14448371
+  icon: chess.png
   image: 
-  description: DB administration of MySQL & PostgreSQL
+  description: 
+  blurb: Rated 1618 USCF and 2000-ish on [Lichess](https://lichess.org/@/PhilChessPDX),
+    I'm always looking to improve.
+  location: 
+  dates: 
+  person_id: 1
+  order: 1
+  type: Interest
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.504341000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-30 16:20:39.588312000 Z
+    zone: *2
+    time: *3
+  svg: 
+
+item_28:
+  id: 28
+  name: MIT Sailing Club
+  link: http://sailing.mit.edu
+  icon: sailing.png
+  image: 
+  description: 
+  blurb: I'm a lifetime member. If we're ever in Boston, I'll take you out on the
+    Charles.
+  location: 
+  dates: 
+  person_id: 1
+  order: 2
+  type: Interest
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.514454000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-30 16:20:39.598150000 Z
+    zone: *2
+    time: *3
+  svg: 
+
+item_15:
+  id: 15
+  name: readabout.me
+  link: http://web.archive.org/web/20130601003317/http://readabout.me/
+  icon: readaboutme.png
+  image: readaboutme-site.jpg
+  description: Ruby on Rails engineer
+  blurb: readabout.me was the predecessor to Merit, focusing primarily on students.
+    The Rails app was deployed on Heroku initially, but with its success we quickly
+    outgrew Heroku and switched to AWS.
+  location: New York, NY
+  dates: 2012 &ndash; 2014
+  person_id: 1
+  order: 2
+  type: Site
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.251407000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-30 16:20:39.362048000 Z
+    zone: *2
+    time: *3
+  svg: 
+
+item_20:
+  id: 20
+  name: Docker Dashboard
+  link: https://github.com/stedwick/docker-dashboard/
+  icon: 
+  image: 
+  description: View on GitHub
+  blurb: Simple terminal dashboard for Docker using Tmux
+  location: 
+  dates: 
+  person_id: 1
+  order: 2
+  type: Project
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.340606000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-18 01:13:38.340606000 Z
+    zone: *2
+    time: *3
+  svg: terminal
+
+item_6:
+  id: 6
+  name: Docker
+  link: https://www.docker.com
+  icon: docker.png
+  image: 
+  description: Containerize all the things!
   blurb: 
   location: 
   dates: 
@@ -60,14 +364,166 @@ item_3:
   order: 2
   type: Skill
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:14:24.620889000 Z
+    utc: &1 2018-05-18 01:13:38.116118000 Z
     zone: &2 !ruby/object:ActiveSupport::TimeZone
       name: Etc/UTC
     time: *1
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:14:24.620889000 Z
+    utc: &3 2018-05-30 16:20:39.217366000 Z
     zone: *2
     time: *3
+  svg: 
+
+item_16:
+  id: 16
+  name: readMedia
+  link: https://web.archive.org/web/20110811204633/http://www.readmedia.com:80/
+  icon: readmedia.png
+  image: readmedia-site.jpg
+  description: Ruby on Rails developer
+  blurb: readMedia sends press releases to newspapers via mail merge for its clients
+    all over the country. I upgraded the readMedia.com Rails 2 app to Rails 3, helped
+    move it onto AWS, and was one of three developers working full-time on the app
+    for many years.
+  location: New York, NY
+  dates: 2008 &ndash; 2012
+  person_id: 1
+  order: 3
+  type: Site
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.262744000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-30 16:20:39.374286000 Z
+    zone: *2
+    time: *3
+  svg: 
+
+item_21:
+  id: 21
+  name: Taggy for Evernote
+  link: https://github.com/stedwick/taggy-for-evernote
+  icon: 
+  image: 
+  description: View on GitHub
+  blurb: 'Taggy for Evernote was my app in the Mac App Store. Taggy makes your Evernote
+    tags function as you want them to: hierarchically.'
+  location: 
+  dates: 
+  person_id: 1
+  order: 3
+  type: Project
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.351284000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-18 01:13:38.351284000 Z
+    zone: *2
+    time: *3
+  svg: evernote
+
+item_30:
+  id: 30
+  name: Kubernetes
+  link: https://kubernetes.io
+  icon: kubernetes.png
+  image: 
+  description: Container orchestration and scaling
+  blurb: 
+  location: 
+  dates: 
+  person_id: 1
+  order: 3
+  type: Skill
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-30 16:20:39.227658000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-30 16:20:39.227658000 Z
+    zone: *2
+    time: *3
+  svg: 
+
+item_29:
+  id: 29
+  name: Toast the Dog!
+  link: https://www.instagram.com/toastwiththemost/
+  icon: toast.png
+  image: 
+  description: 
+  blurb: Such a good dog, but he sometimes sits onkjf ssadkl
+  location: 
+  dates: 
+  person_id: 1
+  order: 3
+  type: Interest
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.524627000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-30 16:20:39.607506000 Z
+    zone: *2
+    time: *3
+  svg: 
+
+item_22:
+  id: 22
+  name: Arkanoid
+  link: https://github.com/stedwick/arkanoid
+  icon: 
+  image: 
+  description: View on GitHub
+  blurb: Arkanoid is my take on the classic Nintendo Breakout game. Written in C for
+    MS DOS long ago.
+  location: 
+  dates: 
+  person_id: 1
+  order: 4
+  type: Project
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.361299000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-18 01:13:38.361299000 Z
+    zone: *2
+    time: *3
+  svg: gamecontroller
+
+item_17:
+  id: 17
+  name: Brightidea
+  link: http://www.brightidea.com
+  icon: brightidea.png
+  image: brightidea-site.jpg
+  description: Analyst
+  blurb: Brightidea provides innovation management software-as-a-service. As one of
+    their early employees, I helped with sales, onboarding, consulting, traveling,
+    and running their software.
+  location: New York, NY
+  dates: 2007 &ndash; 2008
+  person_id: 1
+  order: 4
+  type: Site
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &1 2018-05-18 01:13:38.276023000 Z
+    zone: &2 !ruby/object:ActiveSupport::TimeZone
+      name: Etc/UTC
+    time: *1
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: &3 2018-05-30 16:20:39.385773000 Z
+    zone: *2
+    time: *3
+  svg: 
 
 item_4:
   id: 4
@@ -80,17 +536,18 @@ item_4:
   location: 
   dates: 
   person_id: 1
-  order: 3
+  order: 4
   type: Skill
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:14:24.631692000 Z
+    utc: &1 2018-05-18 01:13:38.083381000 Z
     zone: &2 !ruby/object:ActiveSupport::TimeZone
       name: Etc/UTC
     time: *1
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:14:24.631692000 Z
+    utc: &3 2018-05-30 16:20:39.240088000 Z
     zone: *2
     time: *3
+  svg: 
 
 item_5:
   id: 5
@@ -104,40 +561,42 @@ item_5:
   location: 
   dates: 
   person_id: 1
-  order: 4
+  order: 5
   type: Skill
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:14:24.641592000 Z
+    utc: &1 2018-05-18 01:13:38.098641000 Z
     zone: &2 !ruby/object:ActiveSupport::TimeZone
       name: Etc/UTC
     time: *1
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:14:24.641592000 Z
+    utc: &3 2018-05-30 16:20:39.249967000 Z
     zone: *2
     time: *3
+  svg: 
 
-item_6:
-  id: 6
-  name: Docker
-  link: https://www.docker.com
-  icon: docker.png
+item_3:
+  id: 3
+  name: MySQL/PostgreSQL
+  link: https://www.mysql.com/
+  icon: mysql.png
   image: 
-  description: Containerized deployment with Docker, Docker Compose, and Docker Machine
+  description: DB administration of MySQL & PostgreSQL
   blurb: 
   location: 
   dates: 
   person_id: 1
-  order: 5
+  order: 6
   type: Skill
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:14:24.651665000 Z
+    utc: &1 2018-05-18 01:13:38.062019000 Z
     zone: &2 !ruby/object:ActiveSupport::TimeZone
       name: Etc/UTC
     time: *1
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:14:24.651665000 Z
+    utc: &3 2018-05-30 16:20:39.263970000 Z
     zone: *2
     time: *3
+  svg: 
 
 item_7:
   id: 7
@@ -150,17 +609,18 @@ item_7:
   location: 
   dates: 
   person_id: 1
-  order: 6
+  order: 7
   type: Skill
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:14:24.662216000 Z
+    utc: &1 2018-05-18 01:13:38.131419000 Z
     zone: &2 !ruby/object:ActiveSupport::TimeZone
       name: Etc/UTC
     time: *1
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:14:24.662216000 Z
+    utc: &3 2018-05-30 16:20:39.274056000 Z
     zone: *2
     time: *3
+  svg: 
 
 item_8:
   id: 8
@@ -173,17 +633,18 @@ item_8:
   location: 
   dates: 
   person_id: 1
-  order: 7
+  order: 8
   type: Skill
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:14:24.672276000 Z
+    utc: &1 2018-05-18 01:13:38.143177000 Z
     zone: &2 !ruby/object:ActiveSupport::TimeZone
       name: Etc/UTC
     time: *1
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:14:24.672276000 Z
+    utc: &3 2018-05-30 16:20:39.283786000 Z
     zone: *2
     time: *3
+  svg: 
 
 item_9:
   id: 9
@@ -196,43 +657,45 @@ item_9:
   location: 
   dates: 
   person_id: 1
-  order: 8
+  order: 9
   type: Skill
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:14:24.682433000 Z
+    utc: &1 2018-05-18 01:13:38.154393000 Z
     zone: &2 !ruby/object:ActiveSupport::TimeZone
       name: Etc/UTC
     time: *1
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:14:24.682433000 Z
+    utc: &3 2018-05-30 16:20:39.293716000 Z
     zone: *2
     time: *3
+  svg: 
 
-item_10:
-  id: 10
-  name: Vagrant
-  link: https://www.vagrantup.com/
-  icon: vagrant.png
+item_11:
+  id: 11
+  name: Photoshop
+  link: https://www.adobe.com/products/photoshop.html
+  icon: photoshop.png
   image: 
-  description: Keeping dev and production parity
+  description: Image editing and optimization
   blurb: 
   location: 
   dates: 
   person_id: 1
-  order: 9
+  order: 10
   type: Skill
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:14:24.692296000 Z
+    utc: &1 2018-05-18 01:13:38.174932000 Z
     zone: &2 !ruby/object:ActiveSupport::TimeZone
       name: Etc/UTC
     time: *1
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:14:24.692296000 Z
+    utc: &3 2018-05-18 01:13:38.174932000 Z
     zone: *2
     time: *3
+  svg: 
 
-item_11:
-  id: 11
+item_12:
+  id: 12
   name: Social Networking
   link: https://www.facebook.com/philip.brocoum
   icon: social.png
@@ -242,110 +705,15 @@ item_11:
   location: 
   dates: 
   person_id: 1
-  order: 10
+  order: 11
   type: Skill
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:14:24.702067000 Z
+    utc: &1 2018-05-18 01:13:38.186422000 Z
     zone: &2 !ruby/object:ActiveSupport::TimeZone
       name: Etc/UTC
     time: *1
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:14:24.702067000 Z
+    utc: &3 2018-05-18 01:13:38.186422000 Z
     zone: *2
     time: *3
-
-item_12:
-  id: 12
-  name: Merit
-  link: http://www.meritpages.com/
-  icon: merit.png
-  image: merit-site.jpg
-  description: Ruby on Rails engineer
-  blurb: Meritpages.com is the largest Rails app I've ever worked on, comprising eight
-    Rails apps deployed in a services architecture on AWS.
-  location: New York, NY
-  dates: "(2013 &ndash; 2016)"
-  person_id: 1
-  order: 0
-  type: Site
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:17:51.918974000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:17:51.918974000 Z
-    zone: *2
-    time: *3
-
-item_13:
-  id: 13
-  name: Go Green Ride
-  link: http://www.gogreenride.com
-  icon: gogreenride.png
-  image: gogreenride-site.jpg
-  description: Ruby on Rails consultant
-  blurb: GoGreenRide.com is a ride-sharing backend similar to Uber, deployed on Rackspace
-    using Passenger.
-  location: Bayonne, NJ
-  dates: "(2013)"
-  person_id: 1
-  order: 1
-  type: Site
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:17:51.930322000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:17:51.930322000 Z
-    zone: *2
-    time: *3
-
-item_14:
-  id: 14
-  name: readabout.me
-  link: http://web.archive.org/web/20130601003317/http://readabout.me/
-  icon: readaboutme.png
-  image: readaboutme-site.jpg
-  description: Ruby on Rails engineer
-  blurb: readabout.me was the predecessor to Meritpages.com, deployed on Heroku.
-  location: New York, NY
-  dates: "(2012 &ndash; 2013)"
-  person_id: 1
-  order: 2
-  type: Site
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:17:51.941081000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:17:51.941081000 Z
-    zone: *2
-    time: *3
-
-item_15:
-  id: 15
-  name: readMedia
-  link: https://web.archive.org/web/20110811204633/http://www.readmedia.com:80/
-  icon: readmedia.png
-  image: readmedia-site.jpg
-  description: Ruby on Rails developer
-  blurb: readMedia sends press releases via mail merge for their clients. I upgraded
-    the existing Rails 2 app to Rails 3, and was one of three developers working full-time
-    on the app for many years.
-  location: New York, NY
-  dates: "(2008 &ndash; 2013)"
-  person_id: 1
-  order: 3
-  type: Site
-  created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &1 2018-04-14 01:17:51.951569000 Z
-    zone: &2 !ruby/object:ActiveSupport::TimeZone
-      name: Etc/UTC
-    time: *1
-  updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: &3 2018-04-14 01:17:51.951569000 Z
-    zone: *2
-    time: *3
+  svg: 
