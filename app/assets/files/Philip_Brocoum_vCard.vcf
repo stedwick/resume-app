@@ -1,14 +1,13 @@
 begin:vcard
 version:3.0
-prodid:Microsoft-MacOutlook/10.d.1.180523
+prodid:Microsoft-MacOutlook/10.e.1.180613
 UID:7C1BA6F1-C926-40DC-B857-B8C50A97689B
 fn;charset=utf-8:Philip Brocoum
 n;charset=utf-8:Brocoum;Philip;;;
-title;charset=utf-8:DevOps engineer and full-stack Ruby on Rails developer
+title;charset=utf-8:Full-stack Ruby on Rails developer
 note;charset=utf-8: 
 url;charset=utf-8;type=home:https://philipbrocoum.com
-url;charset=utf-8;type=work:https://stackoverflow.com/story/philipbrocoum
-bday:1982-10-01
+url;charset=utf-8;type=work:https://www.linkedin.com/in/philipbrocoum/
 adr;charset=utf-8;type=home;type=pref:;;;Portland;OR;;
 label;charset=utf-8;type=home;type=pref:Portland\, OR
 tel;charset=utf-8;type=cell:1 (347) 701-0252
