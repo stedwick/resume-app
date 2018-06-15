@@ -11,7 +11,7 @@ philip = Person.find_by name: "Philip Brocoum"
 philip ||= Person.new
 philip.update({
   name: "Philip Brocoum",
-  about: "DevOps engineer and full-stack Ruby on Rails developer",
+  about: "Full-stack Ruby on Rails developer",
   location: "Portland, OR",
   github: "https://github.com/stedwick",
   linkedin: "https://www.linkedin.com/in/philipbrocoum",
@@ -29,7 +29,7 @@ philip.update({
   projects_blurb: "<span class='projects_blurb'>I often program for fun, and you can browse my side projects on GitHub. I once [wrote a Ruby script](https://github.com/stedwick/scripting/blob/master/daily_tix.rb) to nab myself tickets to The Daily Show, which was first-come-first-serve on its website at the time, and you never knew when tickets would become available.</span>",
   old_blurb: "I work with all the current tools and platforms for Ruby on Rails web development. I'm constantly trying out the cutting-edge as well, such as Docker.",
   personal_blurb: "I maintain a healthy work/life balance. If you'd like to learn more about me beyond my professional life, check out the links below!",
-  contact_blurb: "<span class=\"dropcaps d-none d-md-inline\">H</span><span class=\"dropcaps dcsm d-md-none\">H</span>i there! If you've made it this far, drop me a line. <span class=\"not_for_hire\">I'm always open to _**remote**_ opportunities in either DevOps or Ruby on Rails.</span><span class=\"for_hire\">I'm looking for a _**full-time remote**_ position, in either DevOps or Ruby on Rails.</span> I have 8 years of experience working remotely: I work M-F 9-5 from my home office and I'm always available on Slack or chat, and for pair programming and video calls. I'm also happy to travel onsite on a regular schedule or as needed. Send me an email, let me know what your company is working on, and I'll speak with you soon &#x1f44d;.",
+  contact_blurb: "<span class=\"dropcaps d-none d-md-inline\">H</span><span class=\"dropcaps dcsm d-md-none\">H</span>i there! If you've made it this far, drop me a line. <span class=\"not_for_hire\">I'm always open to _**remote**_ Ruby on Rails opportunities.</span><span class=\"for_hire\">I'm looking for a _**full-time remote**_ Ruby on Rails position.</span> I have 8 years of experience working remotely: I work M-F 9-5 from my home office and I'm always available on Slack or chat, and for pair programming and video calls. I'm also happy to travel onsite on a regular schedule or as needed. Send me an email, let me know what your company is working on, and I'll speak with you soon &#x1f44d;.",
   phone: "1 (347) 701-0252",
   email: "philip.brocoum@gmail.com",
   profile_pic: "philip-sq.jpg",
@@ -66,35 +66,24 @@ skill.update({
 })
 
 i+=1
-skill = philip.skills.find_by name: "Docker"
+skill = philip.skills.find_by name: "MySQL/PostgreSQL"
 skill ||= philip.skills.build
 skill.update({
-  name: "Docker",
-  link: "https://www.docker.com",
-  icon: "docker.png",
-  description: "Containerize all the things!",
+  name: "MySQL/PostgreSQL",
+  link: "https://www.mysql.com/",
+  icon: "mysql.png",
+  description: "DB administration of MySQL & PostgreSQL",
   order: i
 })
 
 i+=1
-skill = philip.skills.find_by name: "Kubernetes"
+skill = philip.skills.find_by name: "git"
 skill ||= philip.skills.build
 skill.update({
-  name: "Kubernetes",
-  link: "https://kubernetes.io",
-  icon: "kubernetes.png",
-  description: "Container orchestration and scaling",
-  order: i
-})
-
-i+=1
-skill = philip.skills.find_by name: "App Deployment"
-skill ||= philip.skills.build
-skill.update({
-  name: "App Deployment",
-  link: "https://www.phusionpassenger.com",
-  icon: "web.png",
-  description: "Production Rails on Phusion Passenger, Apache, Nginx, and Puma",
+  name: "git",
+  link: "https://github.com/stedwick",
+  icon: "git.png",
+  description: "git-flow is my preferred branching model",
   order: i
 })
 
@@ -110,25 +99,47 @@ skill.update({
 })
 
 i+=1
-skill = philip.skills.find_by name: "MySQL/PostgreSQL"
+skill = philip.skills.find_by name: "App Deployment"
 skill ||= philip.skills.build
 skill.update({
-  name: "MySQL/PostgreSQL",
-  link: "https://www.mysql.com/",
-  icon: "mysql.png",
-  description: "DB administration of MySQL & PostgreSQL",
+  name: "App Deployment",
+  link: "https://www.phusionpassenger.com",
+  icon: "web.png",
+  description: "Production Rails on Phusion Passenger, Apache, Nginx, and Puma",
+  order: i
+})
+
+i+=1
+skill = philip.skills.find_by name: "Vagrant"
+skill ||= philip.skills.build
+skill.update({
+  name: "Vagrant",
+  link: "https://www.vagrantup.com/",
+  icon: "vagrant.png",
+  description: "Keeping dev and production parity",
+  order: i
+})
+
+i+=1
+skill = philip.skills.find_by name: "Docker"
+skill ||= philip.skills.build
+skill.update({
+  name: "Docker",
+  link: "https://www.docker.com",
+  icon: "docker.png",
+  description: "Containerize all the things!",
   order: i
 })
 
 # i+=1
-# skill = philip.skills.find_by name: "Vagrant"
+# skill = philip.skills.find_by name: "Kubernetes"
 # skill ||= philip.skills.build
 # skill.update({
-  # name: "Vagrant",
-  # link: "https://www.vagrantup.com/",
-  # icon: "vagrant.png",
-  # description: "Keeping dev and production parity",
-  # order: i
+#   name: "Kubernetes",
+#   link: "https://kubernetes.io",
+#   icon: "kubernetes.png",
+#   description: "Container orchestration and scaling",
+#   order: i
 # })
 
 i+=1
@@ -154,17 +165,6 @@ skill.update({
 })
 
 i+=1
-skill = philip.skills.find_by name: "git"
-skill ||= philip.skills.build
-skill.update({
-  name: "git",
-  link: "https://github.com/stedwick",
-  icon: "git.png",
-  description: "git-flow is my preferred branching model",
-  order: i
-})
-
-i+=1
 skill = philip.skills.find_by name: "Photoshop"
 skill ||= philip.skills.build
 skill.update({
@@ -182,7 +182,7 @@ skill.update({
   name: "Social Networking",
   link: "https://www.facebook.com/philip.brocoum",
   icon: "social.png",
-  description: "API integration with Facebook, Twitter, Instagram, and LinkedIn",
+  description: "OAuth API integration with Facebook, Twitter, Instagram, and LinkedIn",
   order: i
 })
 
