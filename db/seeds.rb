@@ -109,14 +109,25 @@ skill.update({
   order: i
 })
 
+# i+=1
+# skill = philip.skills.find_by name: "Vagrant"
+# skill ||= philip.skills.build
+# skill.update({
+  # name: "Vagrant",
+  # link: "https://www.vagrantup.com/",
+  # icon: "vagrant.png",
+  # description: "Keeping dev and production parity",
+  # order: i
+# })
+
 i+=1
-skill = philip.skills.find_by name: "Vagrant"
+skill = philip.skills.find_by name: "Automated Testing"
 skill ||= philip.skills.build
 skill.update({
-  name: "Vagrant",
-  link: "https://www.vagrantup.com/",
-  icon: "vagrant.png",
-  description: "Keeping dev and production parity",
+  name: "Automated Testing",
+  link: "http://rspec.info/",
+  icon: "rspec.png",
+  description: "RSpec and minitest TDD",
   order: i
 })
 
