@@ -11,7 +11,7 @@ philip = Person.find_by name: "Philip Brocoum"
 philip ||= Person.new
 philip.update({
   name: "Philip Brocoum",
-  about: "Full-stack Ruby on Rails developer",
+  about: "<p class='lead'>Lead Developer @ <a href='https://c3backflow.com/'>C3Backflow</a></p>",
   location: "Portland, OR",
   github: "https://github.com/stedwick",
   linkedin: "https://www.linkedin.com/in/philipbrocoum",
@@ -199,6 +199,21 @@ skill.update({
 
 # Sites
 i=0
+site = philip.sites.find_by name: "C3Backflow"
+site ||= philip.sites.build
+site.update({
+  name: "C3Backflow",
+  link: "https://c3backflow.com",
+  icon: "c3backflow.png",
+  description: "Lead Developer",
+  blurb: "C3 provides mobile software for backflow testers and water purveyors. I'm the lead developer of their Ruby on Rails app.",
+  dates: "2018 &ndash; present",
+  location: "Portland, OR",
+  image: "c3backflow-site.jpg",
+  order: i
+})
+
+i+=1
 site = philip.sites.find_by name: "Merit"
 site ||= philip.sites.build
 site.update({
