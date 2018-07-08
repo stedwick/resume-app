@@ -11,7 +11,7 @@
         </div>
         <h1 class="display-4 d-none d-sm-block"><%= @person.name %></h1>
         <h1 class="d-sm-none"><%= @person.name %></h1>
-        <%= markdown @person.about %>
+        <p class="lead"><%= @person.about %></p>
         <p class="mb-4"><%= @person.location %></p>
         <p class="icons">
           <%= link_to_social "github", @person.github, {title: "GitHub"} %>

@@ -11,7 +11,7 @@ philip = Person.find_by name: "Philip Brocoum"
 philip ||= Person.new
 philip.update({
   name: "Philip Brocoum",
-  about: "<p class='lead'>Lead Developer @ <a href='https://c3backflow.com/'>C3Backflow</a></p>",
+  about: "Lead Developer at C3Backflow",
   location: "Portland, OR",
   github: "https://github.com/stedwick",
   linkedin: "https://www.linkedin.com/in/philipbrocoum",
