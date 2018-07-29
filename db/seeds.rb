@@ -11,25 +11,25 @@ philip = Person.find_by name: "Philip Brocoum"
 philip ||= Person.new
 philip.update({
   name: "Philip Brocoum",
-  about: "Lead Developer at C3Backflow",
+  about: "Lead Developer at Syncta",
   location: "Portland, OR",
   github: "https://github.com/stedwick",
   linkedin: "https://www.linkedin.com/in/philipbrocoum",
   stackoverflow: "https://stackoverflow.com/story/philipbrocoum",
   facebook: "https://www.facebook.com/philip.brocoum",
   twitter: "https://twitter.com/stedwick",
-  career_blurb: "<div class='col-12 col-lg-6'><p>Hello! I'm Philip, and I started developing for the web at a startup in NYC in 2007. Fast-forward ten years and here I am in Portland with a decade of experience working on large apps using the best and most popular technologies.</p></div>
+  career_blurb: "<div class='col-12 col-lg-6'><p>Hello! I'm Philip, and I started developing for the web at a startup in NYC in 2007. Fast-forward ten years and here I am in Portland as the Lead Developer at <a href=\"https://syncta.com/\">Syncta</a>, a startup that was recently acquired by <a href=\"http://www.wattswater.com/\">Watts Water Technologies</a>.</p></div>
   
   <div class='col-12 col-lg-6'><p>This site you're reading now is made with [Rails 5](http://rubyonrails.org), [Bootstrap 4](https://getbootstrap.com), and [PostgreSQL](https://www.postgresql.org). It's deployed to [Microsoft Azure](https://azure.microsoft.com/) using [Docker](https://www.docker.com) & [Kubernetes](https://kubernetes.io), [Let's Encrypt](https://letsencrypt.org/), [HAProxy](http://www.haproxy.org), [Nginx](http://nginx.org), and [Puma](http://puma.io). You can view the source on [GitLab](https://gitlab.com/users/stedwick/projects).</p></div>",
   # skills_blurb: "",
   education_blurb: "I majored in mathematics in college and grad school, and my first career was as a teacher in New York City. However, I always loved computers and quickly transitioned to my new career as a developer.",
   work_blurb: "<div class='col-12 col-lg-6'><p>I started in tech as an analyst at Brightidea back in 2007 when I was 25. At that time, I was transitioning away from mathematics and education. I taught myself Ruby on Rails and was hired a year later at readMedia as their first full-time developer. We grew the company and turned it into what Merit is today.</p></div>
   
-  <div class='col-12 col-lg-6'><p>It was a startup environment, and I didn't just develop in Ruby &mdash; I did everything: DB & server administration and deployment, cloud scaling and automation, security, and project management. My passion has always been to build great products with great technologies.</p></div>",
+  <div class='col-12 col-lg-6'><p>I'm now the Lead Developer at [Syncta](https://syncta.com/) in Portland, OR. We provide mobile software for backflow testers and water purveyors. We were recently acquired by [Watts Water Technologies](http://www.wattswater.com/). My passion has always been to build great products with great technologies.</p></div>",
   projects_blurb: "<span class='projects_blurb'>I often program for fun, and you can browse my side projects on GitHub. I once [wrote a Ruby script](https://github.com/stedwick/scripting/blob/master/daily_tix.rb) to nab myself tickets to The Daily Show, which was first-come-first-serve on its website at the time, and you never knew when tickets would become available.</span>",
   old_blurb: "I work with all the current tools and platforms for Ruby on Rails web development. I'm constantly trying out the cutting-edge as well, such as Docker.",
   personal_blurb: "I maintain a healthy work/life balance. If you'd like to learn more about me beyond my professional life, check out the links below!",
-  contact_blurb: "<span class=\"dropcaps d-none d-md-inline\">H</span><span class=\"dropcaps dcsm d-md-none\">H</span>i there! <span class=\"not_for_hire\">I'm currently at [C3Backflow](https://c3backflow.com), so I'm not looking for new opportunities. C3 provides mobile software for backflow testers and water purveyors. I'm the lead developer of their Ruby on Rails app. Still, if you've made it this far, feel free to drop me a line. Send me an email and I'll speak with you soon &#x1f44d;.</span><span class=\"for_hire\">If you've made it this far, drop me a line. I'm looking for a _**full-time remote**_ Ruby on Rails position. I have 8 years of experience working remotely: I work M-F 9-5 from my home office and I'm always available on Slack or chat, and for pair programming and video calls. I'm also happy to travel onsite on a regular schedule or as needed. Send me an email, let me know what your company is working on, and I'll speak with you soon &#x1f44d;.</span>",
+  contact_blurb: "<span class=\"dropcaps d-none d-md-inline\">H</span><span class=\"dropcaps dcsm d-md-none\">H</span>i there! <span class=\"not_for_hire\">I'm currently at [Syncta](https://syncta.com), so I'm not looking for new opportunities. Syncta provides mobile software for backflow testers and water purveyors, and I'm the Lead Developer of their Ruby on Rails app. Still, if you've made it this far, feel free to drop me a line. Send me an email and I'll speak with you soon &#x1f44d;.</span><span class=\"for_hire\">If you've made it this far, drop me a line. I'm looking for a _**full-time remote**_ Ruby on Rails position. I have 8 years of experience working remotely: I work M-F 9-5 from my home office and I'm always available on Slack or chat, and for pair programming and video calls. I'm also happy to travel onsite on a regular schedule or as needed. Send me an email, let me know what your company is working on, and I'll speak with you soon &#x1f44d;.</span>",
   phone: "1 (347) 701-0252",
   email: "philip.brocoum@gmail.com",
   profile_pic: "philip-sq.jpg",
@@ -77,17 +77,6 @@ skill.update({
 })
 
 i+=1
-skill = philip.skills.find_by name: "git"
-skill ||= philip.skills.build
-skill.update({
-  name: "git",
-  link: "https://github.com/stedwick",
-  icon: "git.png",
-  description: "git-flow is my preferred branching model",
-  order: i
-})
-
-i+=1
 skill = philip.skills.find_by name: "AWS/Azure"
 skill ||= philip.skills.build
 skill.update({
@@ -95,6 +84,39 @@ skill.update({
   link: "https://aws.amazon.com/",
   icon: "aws.png",
   description: "Scaling cloud infrastructure in AWS and Azure, including EC2, RDS, and S3",
+  order: i
+})
+
+i+=1
+skill = philip.skills.find_by name: "Project Management"
+skill ||= philip.skills.build
+skill.update({
+  name: "Project Management",
+  link: "https://atlassian.com/",
+  icon: "atlassian.png",
+  description: "Managing remote teams with Jira and Bitbucket",
+  order: i
+})
+
+i+=1
+skill = philip.skills.find_by name: "CI/CD"
+skill ||= philip.skills.build
+skill.update({
+  name: "CI/CD",
+  link: "https://semaphoreci.com/",
+  icon: "semaphore.png",
+  description: "Continuous delivery with Semaphore CI",
+  order: i
+})
+
+i+=1
+skill = philip.skills.find_by name: "Automated Testing"
+skill ||= philip.skills.build
+skill.update({
+  name: "Automated Testing",
+  link: "http://rspec.info/",
+  icon: "rspec.png",
+  description: "RSpec and minitest TDD",
   order: i
 })
 
@@ -121,17 +143,6 @@ skill.update({
 # })
 
 i+=1
-skill = philip.skills.find_by name: "Automated Testing"
-skill ||= philip.skills.build
-skill.update({
-  name: "Automated Testing",
-  link: "http://rspec.info/",
-  icon: "rspec.png",
-  description: "RSpec and minitest TDD",
-  order: i
-})
-
-i+=1
 skill = philip.skills.find_by name: "Docker"
 skill ||= philip.skills.build
 skill.update({
@@ -139,6 +150,17 @@ skill.update({
   link: "https://www.docker.com",
   icon: "docker.png",
   description: "Containerize all the things!",
+  order: i
+})
+
+i+=1
+skill = philip.skills.find_by name: "git"
+skill ||= philip.skills.build
+skill.update({
+  name: "git",
+  link: "https://github.com/stedwick",
+  icon: "git.png",
+  description: "git-flow is my preferred branching model",
   order: i
 })
 
@@ -175,41 +197,41 @@ skill.update({
   order: i
 })
 
-i+=1
-skill = philip.skills.find_by name: "Photoshop"
-skill ||= philip.skills.build
-skill.update({
-  name: "Photoshop",
-  link: "https://www.adobe.com/products/photoshop.html",
-  icon: "photoshop.png",
-  description: "Image editing and optimization",
-  order: i
-})
+# i+=1
+# skill = philip.skills.find_by name: "Photoshop"
+# skill ||= philip.skills.build
+# skill.update({
+#   name: "Photoshop",
+#   link: "https://www.adobe.com/products/photoshop.html",
+#   icon: "photoshop.png",
+#   description: "Image editing and optimization",
+#   order: i
+# })
 
-i+=1
-skill = philip.skills.find_by name: "Social Networking"
-skill ||= philip.skills.build
-skill.update({
-  name: "Social Networking",
-  link: "https://www.facebook.com/philip.brocoum",
-  icon: "social.png",
-  description: "OAuth API integration with Facebook, Twitter, Instagram, and LinkedIn",
-  order: i
-})
+# i+=1
+# skill = philip.skills.find_by name: "Social Networking"
+# skill ||= philip.skills.build
+# skill.update({
+#   name: "Social Networking",
+#   link: "https://www.facebook.com/philip.brocoum",
+#   icon: "social.png",
+#   description: "OAuth API integration with Facebook, Twitter, Instagram, and LinkedIn",
+#   order: i
+# })
 
 # Sites
 i=0
-site = philip.sites.find_by name: "C3Backflow"
+site = philip.sites.find_by name: "Syncta"
 site ||= philip.sites.build
 site.update({
-  name: "C3Backflow",
-  link: "https://c3backflow.com",
-  icon: "c3backflow.png",
+  name: "Syncta",
+  link: "https://syncta.com",
+  icon: "syncta.png",
   description: "Lead Developer",
-  blurb: "C3 provides mobile software for backflow testers and water purveyors. I'm the lead developer of their Ruby on Rails app.",
+  blurb: "Syncta provides mobile software for backflow testers and water purveyors. I'm the Lead Developer of our Ruby on Rails app, the JSON API that powers our iOS and Android apps, and the automation behind SynctaOne.",
   dates: "2018 &ndash; present",
   location: "Portland, OR",
-  image: "c3backflow-site.jpg",
+  image: "syncta-site.jpg",
   order: i
 })
 
